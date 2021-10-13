@@ -8,7 +8,7 @@ The TLA+ Foundation is also responsible for the evolution of the TLA+ specificat
 # 2. The values of the Foundation
 How the foundatoin pursues its goals is just as important as what the goals are. These core principles will guide the actions of the foundation:
 
-* **Open source**. The TLA+ foundation will embrace the open-source ethos wholeheartedly. Whenever the TLAF develops or sponsors the development of tools and infrastructure, it will all be open source under a permissive license.  This is not limited to the end result but also applies to how work is organized and carried out; the community at large has to be able to participate at each step of the journey.
+* **Open source**. The TLA+ foundation will embrace the open-source ethos wholeheartedly. Whenever the TLAF develops or sponsors the development of tools and infrastructure, it will all be open-source under a permissive license.  This is not limited to the end result but also applies to how work is organized and carried out; the community at large has to be able to participate at each step of the journey.
  
 * **Empowering the community**. While the TLAF raises resources to fund development work, it does not compete with volunteer efforts from industry or academia. The main focus is to address the tragedy of the commons to enable the success of others. The TLAF will boost, celebrate, and coordinate the contributions of volunteers, not supplant or replace them.
 
