@@ -14,4 +14,4 @@ How we pursue the goals of the TLAF is just as important as what the goals are. 
 
 * **Transparent**. All formal decision-making will be publicly accessible. We also strive to share ideas early. This is to enable asynchronous communication and collaboration. Only certain categories of sensitive information (e.g., financial and matters concerning particular individuals) may be kept confidential.
 
-* **Open, friendly, and diverse**. `We strive to make sure that all lifeforms are welcome, that all can contribute, and that it can all be done in a way that empowers our community members.
+* **Open, friendly, and diverse**. We strive to make sure that all life forms are welcome, that all can contribute, and that it can all be done in a way that empowers our community members.
