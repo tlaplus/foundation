@@ -2,7 +2,7 @@
 
 ### What TLA+ Does
 
-One of the costliest elements of software development — second only to finding out what to build — is ensuring the system does what it is meant to do. As a formal methods researcher once said, computers were invented to surprise us; if we knew what answer they'd give us, we wouldn't have built them. That is why developers spend much of their time on quality assurance through code reviews, testing (functional, performance, security), and a great deal of bug-fixing. Some bugs are costlier than others because:
+One of the costliest elements of software development — second only to finding out what to build — is ensuring the system does what it is meant to do. That is why developers spend much of their time on quality assurance through code reviews, testing (functional, performance, security), and a great deal of bug-fixing. Some bugs are costlier than others because:
 
 - They are difficult to reproduce during the development phase (**discovery**).
 - They are *design* flaws that require significant rework to fix (**correction**).
@@ -10,7 +10,7 @@ One of the costliest elements of software development — second only to finding
 
 Because they are non-deterministic and complex, concurrent and distributed systems, tend to suffer from bugs that are costly for all those reasons.
 
-TLA+ is a specification language and a set of tools that offer a cost-effective way of finding and fixing the most expensive flaws early in development. Users write a precise and concise description of the system and their expectations from its behavior in TLA+, and the tools then check whether the expectations hold and, if not, how they might break.
+TLA+ is a specification language and a set of tools that offer a cost-effective way of finding and fixing flaws early in development when those flaws are cheaper to fix. Users write a precise and concise description of the system and their expectations from its behavior in TLA+, and the tools then check whether the expectations hold and, if not, how they might break.
 
 ### Why TLA+
 
