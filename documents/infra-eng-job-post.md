@@ -45,7 +45,7 @@ The selected candidate will work to expand automated test coverage, maintain a b
  * Maintain a benchmark database of time & memory performance across releases
  * Write CI/CD scripts to automate as much of the release process as possible
  * Optimize the build process to reduce build time and size of outputs
- * Maintaining & improving developer experience for the tools themselves
+ * Maintain & improve developer experience for the tools themselves
 
 **Required Skills/Experience**
 
