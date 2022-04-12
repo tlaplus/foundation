@@ -19,6 +19,11 @@ One interesting question is whether we should require a Bachelor's in Computer S
 It is not my impression that bootcamps or alternative forms of education focus much on infrastructure tasks of this sort, but I could be wrong.
 It's not like CS degrees focus on this much either, although I'm a decade out of college so maybe they actually do teach how to set up a CI/CD pipeline these days.
 
+Some other things to decide:
+ * Location? US-only? Global?
+ * Type of employment: contract? W-2 (or equivalent)?
+ * Human language proficiency
+
 ## The Post
 
 **Title**
@@ -28,7 +33,7 @@ It's not like CS degrees focus on this much either, although I'm a decade out of
 **Job Description**
 
 Use your skills to provide valuable infrastructure work for an open-source project blending the best aspects of industry and academia!
-TLA+ is a formal specification language developed by Microsoft Research, INRIA, and many others in the global community.
+TLA+ is a formal specification language developed by Microsoft Research, Inria, and many others in the global community.
 It is widely used in both industry & academia to specify and validate the design of complex systems such as consensus protocols or databases.
 Take on the first development role created by the nonprofit TLA+ Foundation to support the growth of the TLA+ tools and ecosystem!
 This remote role features & requires a large degree of autonomy.
