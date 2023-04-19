@@ -14,7 +14,7 @@ The core principles guide the actions of the foundation:
 
 * **Transparent**. All formal decision-making will be publicly accessible. The TLAF also strives to share ideas early to enhance collaboration and avoid duplicate efforts. Only certain categories of sensitive information (e.g., financial data and matters concerning particular individuals) may be kept confidential.
 
-* **Open, friendly, and diverse**. The TLAF strives to make sure that everyone is welcome and all can [contribute]([https://github.com/tlaplus](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md)).
+* **Open, friendly, and diverse**. The TLAF strives to make sure that everyone is welcome and all can [contribute]([https://github.com/tlaplus](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md)).  Also consider attending our [regular project meetings](https://calendar.google.com/calendar/embed?src=cb3f93f188c92378a8fec42b25365ab2a64665d770a8265c1fcec00e03823c6c%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
 # Press Release
 
