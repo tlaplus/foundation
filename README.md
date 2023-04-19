@@ -30,5 +30,7 @@ The TLA+ Foundation would not exist without the support of the Member organizati
   <td><a href="https://oracle.com"><img src="./logos/oracle-america-inc.svg" alt="Oracle Logo" width="300" height="300"></a></td>
 </tr></table>
 
-## Footer
+
+----------------------
+
 Copyright © 2023 The Linux Foundation®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our [Trademark Usage](https://www.linuxfoundation.org/legal/trademarks) page. Linux is a registered trademark of Linus Torvalds. [Terms of Use](https://www.linuxfoundation.org/legal/terms) | [Privacy Policy](https://www.linuxfoundation.org/legal/privacy-policy) | [Bylaws](https://www.linuxfoundation.org/legal/bylaws) | [Antitrust Policy](https://www.linuxfoundation.org/legal/antitrust-policy) | [Good Standing Policy](https://www.linuxfoundation.org/legal/good-standing-policy)
