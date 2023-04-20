@@ -18,7 +18,7 @@ The core principles guide the actions of the foundation:
 
 # Press Release
 
-TBD
+The TLA+ Foundation's launch press release can be found [here](https://www.linuxfoundation.org/press/linux-foundation-launches-tla+foundation).
 
 # Members
 
