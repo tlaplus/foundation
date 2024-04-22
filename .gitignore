@@ -1,0 +1,7 @@
+public/
+*~
+.DS_Store
+.htpasswd
+.hugo_build.lock
+.vscode
+.keep
