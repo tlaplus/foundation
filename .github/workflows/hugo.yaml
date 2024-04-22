@@ -2,6 +2,7 @@ name: GitHub Pages
 
 env:
   PROD_SITE: "https://foundation.tlapl.us"
+  DEV_SITE: ${{ format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name )}}
 
 on:
   push:
@@ -27,8 +28,12 @@ jobs:
           extended: true
 
       - name: Build Main
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && github.repository_owner == 'tlaplus'
         run: hugo --baseURL=$PROD_SITE --minify
+
+      - name: Build Dev
+        if: github.repository_owner != 'tlaplus'
+        run: hugo --baseURL=$DEV_SITE --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
