@@ -1,3 +1,0 @@
-+++
-archetype = "list-chapter"
-+++

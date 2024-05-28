@@ -1,16 +1,7 @@
 /* my-custom-variant */
 :root {
   --SECONDARY-color: rgba(72, 106, 201, 1); /* brand secondary color */
-<<<<<<< HEAD
   --ACCENT-color: #67117e; /* brand accent color, used for search highlights */
-=======
-  --ACCENT-color: rgba(
-    255,
-    136,
-    255,
-    1
-  ); /* brand accent color, used for search highlights */
->>>>>>> 4d4a401 (update layouts, add news section)
   --MAIN-LINK-HOVER-color: rgba(
     32,
     40,
