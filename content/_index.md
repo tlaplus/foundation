@@ -1,6 +1,7 @@
 +++
 title = 'TLA+ Foundation'
 linkTitle = 'TLA+ Foundation'
+archetype = "home"
 description = ""
 draft = false
 +++
@@ -9,6 +10,10 @@ draft = false
 The TLA+ Foundation (TLAF) is an independent, non-profit organization dedicated to fostering the adoption of the [TLA+ specification language](https://lamport.azurewebsites.net/tla/tla.html) in industry, academia, and education, guided by the overall goal of advancing the mathematical thinking in software engineering. The TLAF funds development related to TLA+ to broaden its use and facilitate a thriving [TLA+ community](https://groups.google.com/g/tlaplus), encouraging cooperation among members of that community.
 
 See the [TLA+ Foundation Charter](https://cdn.platform.linuxfoundation.org/agreements/tla.pdf) and the [TLA+ Technical Charter](docs/TLA%2B%20Project%20Technical%20Charter.pdf) for more details.
+
+{{% notice style="accent" title="2024 TLA+ Grant CFP Now Open" icon="bullhorn" %}}
+The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Learn about the [Grant Program and application process](grants/2024-grant-program.md).
+{{% /notice %}}
 
 ## The values of the Foundation
 The core principles guide the actions of the foundation:

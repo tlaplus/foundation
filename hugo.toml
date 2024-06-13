@@ -2,9 +2,9 @@ languageCode = 'en-us'
 title = 'TLA+ Foundation'
 pygmentsUseClassic = true
 PygmentsCodeFences = true
-copyright = "© 2024 TLA+ Foundation Authors"
 enableRobotsTXT = true
 noChmod = true
+staticDir = ['static']
 
 [Params]
     disableInlineCopyToClipBoard = false
