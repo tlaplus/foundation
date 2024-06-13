@@ -55,7 +55,7 @@ We recommend using the Apache License 2.0 for our grants due to its strong commu
 
 ## Application details
 
-The TLA+ grant applications are now open. To apply, fill out the [application template](/docs/TLA%2B%20Grant%20Template.docx) with your proposal details and submit it through the form below.
+The TLA+ grant applications are now open. To apply, fill out the [application template](TLA%2B%20Grant%20Template.docx) with your proposal details and submit it through the form below.
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
