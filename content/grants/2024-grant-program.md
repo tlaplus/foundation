@@ -1,25 +1,22 @@
 +++
 title = 'TLA+ Foundation Grant Program Call for Proposals'
 linkTitle = 'TLA+ Foundation Grant Program Call for Proposals'
-description = "The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis for larger proposals and extenuating circumstances."
+description = "The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis."
 date = 2024-05-28T15:18:27-07:00
 draft = false
 +++
 
-The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis for larger proposals and extenuating circumstances.
+The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis.
 
 Researchers as well as practitioners are welcome to apply!
 
 ## Proposal types
 
-Applicants are encouraged to submit research-oriented or project-oriented proposals.
+Members of the TLA+ community are encouraged to submit proposals for the grant program. The range of subjects is deliberately left open, both projects focusing on research and on the improvement of existing tools or user interfaces are welcome. The following list gives some examples of subjects that might be relevant:
 
-Research-oriented proposals may cover topics including, but not limited to:
 - Use of TLA+ specifications for generating test suites for distributed systems
 - Check conformance of system implementations with respect to TLA+ specifications
 - Automatic techniques for generating inductive invariants
-
-Project-oriented proposals may cover topics including, but not limited to:
 - Improvements to documentation and user experience
 - Incorporate TLAPS and the TLC Profiler into VS Code
 - Implement partial order reduction techniques in TLC
@@ -49,8 +46,8 @@ When putting together your proposal, please be prepared to provide the following
 - Description of relevant work and how it applies to your proposal (if any)
 - Up-to-date CV or résumé (maximum 3 pages per team member)
 
-{{% notice style="primary" title="Softare licensing requirements" icon="circle-exclamation" %}}
-We recommend using the Apache License 2.0 for our grants due to its strong community support, robust legal protections, and permissive nature that encourages collaboration. However, we are committed to an inclusive open source environment and will accept contributions under any [Open Source Initiative (OSI)-approved license](https://opensource.org/licenses), provided a clear and compelling rationale for the chosen license is presented.
+{{% notice style="primary" title="Software licensing requirements" icon="circle-exclamation" %}}
+We require that any new software developed be released as open source under an [MIT License](https://opensource.org/license/mit). If the software developed depends on an existing TLA+ tool, then the new software must use the license of the dependency (strongly preferred) or an open source license that is compatible with the license of the dependency (acceptable). All contributions to existing tools are made under the existing license of the tool in question.
 {{% /notice %}}
 
 ## Application details
