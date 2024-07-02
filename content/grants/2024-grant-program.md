@@ -47,7 +47,7 @@ When putting together your proposal, please be prepared to provide the following
 - Up-to-date CV or résumé (maximum 3 pages per team member)
 
 {{% notice style="primary" title="Software licensing requirements" icon="circle-exclamation" %}}
-We require that any new software developed be released as open source under an [MIT License](https://opensource.org/license/mit). If the software developed depends on an existing TLA+ tool, then the new software must use the license of the dependency (strongly preferred) or an open source license that is compatible with the license of the dependency (acceptable). All contributions to existing tools are made under the existing license of the tool in question.
+We _strongly_ recommend that any software developed as a part of your proposal be licensed under an Apache 2.0, 2-Clause BSD, or MIT license so as to be compatible with existing TLA+ tooling. Preference will be given to proposals that use one of these three licenses when software is an expected artifact.
 {{% /notice %}}
 
 ## Application details
@@ -63,6 +63,16 @@ formId: "153a67b6-b8c9-41cc-8c8f-decfb9826487"
 });
 </script>
 
+## Timeline
+Applications are now open!
+
+| Date | Milestone |
+| :--- | :--- |
+| 31 August 2024 | First submission deadline |
+| 30 September 2024 | Grant committee review closes |
+| 02 October 2024 | Estimated notification to applicants |
+
+Proposals submitted after the first submission deadline will be evaluated on a rolling basis.
 
 ## Questions
 
