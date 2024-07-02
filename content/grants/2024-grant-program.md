@@ -47,7 +47,9 @@ When putting together your proposal, please be prepared to provide the following
 - Up-to-date CV or résumé (maximum 3 pages per team member)
 
 {{% notice style="primary" title="Software licensing requirements" icon="circle-exclamation" %}}
-We _strongly_ recommend that any software developed as a part of your proposal be licensed under an Apache 2.0, 2-Clause BSD, or MIT license so as to be compatible with existing TLA+ tooling. Preference will be given to proposals that use one of these three licenses when software is an expected artifact.
+To ensure compatibility with existing TLA+ tooling, we _strongly_ recommend that any modification of an existing TLA+ tool developed as a part of your proposal be licensed under the same license as that tool, and any new software developed be licensed under an Apache 2.0, 2-Clause BSD, or MIT license.
+
+Preference will be given to proposals that follow this recommendation.
 {{% /notice %}}
 
 ## Application details
