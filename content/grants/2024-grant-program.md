@@ -30,7 +30,7 @@ All awardees will be expected to provide periodic updates to the TLA+ community 
 
 To be eligible for the 2024 TLA+ Grant Program, applicants must:
 
-- Not reside in a country or jurisdiction where participation in the mentorship is prohibited under applicable U.S. federal, state or local laws or the laws of other countries
+- Not reside in a country or jurisdiction where participation in the grant program is prohibited under applicable U.S. federal, state or local laws or the laws of other countries
 - Not be subject to any existing obligations to third parties (such as contractual obligations to an employer) that would restrict or prohibit your participation in the grants program
 - Be able to accept an unrestricted grant on behalf of yourself or your organization
 
