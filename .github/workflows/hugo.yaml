@@ -28,7 +28,7 @@ jobs:
           extended: true
 
       - name: Build Main
-        if: github.ref == 'refs/heads/main' && github.repository_owner == 'tlaplus'
+        if: github.repository_owner == 'tlaplus'
         run: hugo --baseURL=$PROD_SITE --minify
 
       - name: Build Dev
@@ -37,6 +37,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
