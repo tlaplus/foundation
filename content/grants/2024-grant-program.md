@@ -56,6 +56,10 @@ Preference will be given to proposals that follow this recommendation.
 
 The TLA+ grant applications are now open. To apply, fill out the [application template](TLA%2B%20Grant%20Template.docx) with your proposal details and submit it through the form below.
 
+{{% notice style="primary" title="Funding amount justification" icon="circle-exclamation" %}}
+Applications for USD$50,000 or more will need to provide thorough justification for the amount requested. Please use the requested format for your application and give as much detail as possible in the measuring success, projected timeline, and funding justification sections.
+{{% /notice %}}
+
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
 hbspt.forms.create({
