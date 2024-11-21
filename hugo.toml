@@ -36,10 +36,16 @@ staticDir = ['static']
         weight = 30
 
     [[menu.shortcuts]]
+        pre = '<i class="fa-fw fas fa-inbox"></i> '
+        name = 'Mailing List Archive'
+        url = 'https://discuss.tlapl.us/'
+        weight = 40
+
+    [[menu.shortcuts]]
         pre = '<i class="fa-fw fas fa-calendar-day"></i> '
         name = 'Conferences and Events'
         url = 'https://conf.tlapl.us/home/'
-        weight = 40
+        weight = 50
 
 
 [module]
