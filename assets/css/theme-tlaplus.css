@@ -149,6 +149,7 @@ body.main-width-max:not(.print) #R-body .narrow .flex-block-wrapper {
   position: relative;
 }
 article {
+  display: flex;
   flex-direction: column;
   min-height: 100%;
 }
@@ -159,4 +160,8 @@ article {
 footer {
   flex-shrink: 0;
   padding-bottom: .5rem;
+}
+
+.blog-container {
+  flex-grow: 1;
 }
