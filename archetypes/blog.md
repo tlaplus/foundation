@@ -1,5 +1,6 @@
 +++
-type = "default"
+type = "blog"
+menuPre = " "
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 linkTitle = ''
 description = ""

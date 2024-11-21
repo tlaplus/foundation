@@ -12,6 +12,7 @@ staticDir = ['static']
     disableLandingPageButton = false
     disableNextPrev = true
     disableSearch = true
+    disableShortcutsTitle = false
     [Params.Author]
         Name = "TLA+ Foundation"
     [Params.ThemeVariant]
@@ -20,6 +21,26 @@ staticDir = ['static']
 [markup]
 [markup.goldmark.renderer]
     unsafe = true
+
+[menu]
+    [[menu.shortcuts]]
+        pre = '<i class="fa-fw fab fa-github"></i> '
+        name = 'GitHub'
+        url = 'https://github.com/tlaplus/'
+        weight = 10
+
+    [[menu.shortcuts]]
+        pre = '<i class="fa-fw fas fa-at"></i> '
+        name = 'Mailing List'
+        url = 'https://groups.google.com/g/tlaplus/'
+        weight = 30
+
+    [[menu.shortcuts]]
+        pre = '<i class="fa-fw fas fa-calendar-day"></i> '
+        name = 'Conferences and Events'
+        url = 'https://conf.tlapl.us/home/'
+        weight = 40
+
 
 [module]
 [[module.imports]]

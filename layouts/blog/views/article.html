@@ -1,0 +1,13 @@
+
+<article class="default">
+    <header class="headline">
+      {{- partial "content-header.html" . }}
+    </header>
+  {{ partial "heading-pre.html" . }}{{ partial "heading.html" . }}{{ partial "heading-post.html" . }}
+  <div class="blog-container">
+  {{ partial "article-content.html" . }}
+  </div>
+    <footer class="footline">
+      {{- partial "content-footer.html" . }}
+    </footer>
+  </article>
