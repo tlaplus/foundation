@@ -11,10 +11,11 @@ Fork this repository and clone your fork onto your local machine to make modific
 Test the site and your modifications locally by running:
 
 ```zsh
-➜  ~ hugo server -D
+➜  ~ hugo server --buildDrafts --buildFuture
 ```
 
-The `-D` option will show you pages still in draft mode.
+The `--buildDrafts` (or `-D`) option will show you pages still in draft mode, and `--buildFuture` (or `-F`) will show you pages with a publication date in the future.
+If Hugo isn't serving your post and isn't displaying any errors then you are probably missing one of these two options.
 
 ## Writing a blog for the TLA+ website
 
