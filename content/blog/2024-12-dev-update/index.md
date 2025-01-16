@@ -1,7 +1,7 @@
 +++
 title = "December 2024 Monthly Development Update"
 type = "blog"
-date = 2024-12-01
+date = 2024-12-15
 +++
 
 Hello!
