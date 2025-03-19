@@ -47,7 +47,7 @@ Now on to coding-related community developments:
 - [Finn Hackett](https://github.com/fhackett) found [an issue with TLC](https://github.com/tlaplus/tlaplus/issues/1076) where reading non-ASCII strings from disk causes a crash; [a fix](https://github.com/tlaplus/tlaplus/pull/1079) is pending review.
 
 Finally, things I worked on over the past month-and-a-half - all funded by the TLA⁺ Foundation:
-- I adapted [the TLA⁺ syntax test corpus](https://github.com/tlaplus/tlaplus-standard/tree/main/tests/tlaplus_syntax) for use on TLAPM, which implements its own TLA⁺ parser in OCaml.
+- I adapted [the TLA⁺ syntax test corpus](https://github.com/tlaplus/rfcs/tree/2a772d9dd11acec5d7dedf30abfab91a49de48b8/language_standard/tests/tlaplus_syntax) for use on TLAPM, which implements its own TLA⁺ parser in OCaml.
   These found [a number of issues](https://github.com/tlaplus/tlapm/pull/159) in the parser, and also resulted in me writing around fifty additional syntax tests which were backported to [the TLA⁺ Java-based tools](https://github.com/tlaplus/tlaplus/pull/1050) and [the tree-sitter-tlaplus grammar](https://github.com/tlaplus-community/tree-sitter-tlaplus/pull/131).
 - I investigated transitioning TLAPM's parser to use SANY, the Java-based TLA⁺ tools' parser.
   SANY has [an XML parse tree exporter](https://github.com/tlaplus/tlaplus/blob/master/tlatools/org.lamport.tlatools/src/tla2sany/xml/XMLExporter.java) which would avoid any FFI weirdness between OCaml and Java code.
@@ -69,5 +69,6 @@ Join the mailing list and monthly community meeting to introduce yourself if you
 
 Here I will highlight one issue each month that I think would be good for new contributors.
 This month it's [the inability of the TLA⁺ parser to handle backticks in strings](https://github.com/tlaplus/tlaplus/issues/802).
-The primary reason this is a good first issue is that the required change seems very localized and tremendously unlikely to introduce any bugs; the second reason is that it's in a very well-tested part of the codebase (the syntax parser), which has the [standard TLA⁺ syntax test corpus](https://github.com/tlaplus/tlaplus-standard/tree/main/tests/tlaplus_syntax) levied against it - a corpus you will contribute to as part of the fix!
+The primary reason this is a good first issue is that the required change seems very localized and tremendously unlikely to introduce any bugs; the second reason is that it's in a very well-tested part of the codebase (the syntax parser), which has the [standard TLA⁺ syntax test corpus](https://github.com/tlaplus/rfcs/tree/2a772d9dd11acec5d7dedf30abfab91a49de48b8/language_standard/tests/tlaplus_syntax) levied against it - a corpus you will contribute to as part of the fix!
 I hope to see somebody pick this up in December!
+
