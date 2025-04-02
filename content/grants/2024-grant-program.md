@@ -2,12 +2,12 @@
 menuPre = "<i class='fa-fw fas fa-scroll'></i> "
 title = 'TLA+ Foundation Grant Program Call for Proposals'
 linkTitle = 'TLA+ Foundation Grant Program Call for Proposals'
-description = "The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis."
-date = 2024-05-28T15:18:27-07:00
+description = "The 2025 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis."
+date = 2025-05-28T15:18:27-07:00
 draft = false
 +++
 
-The 2024 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis.
+The 2025 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis.
 
 Researchers as well as practitioners are welcome to apply!
 
@@ -29,7 +29,7 @@ All awardees will be expected to provide periodic updates to the TLA+ community 
 
 ## Awardee eligibility
 
-To be eligible for the 2024 TLA+ Grant Program, applicants must:
+To be eligible for the 2025 TLA+ Grant Program, applicants must:
 
 - Not reside in a country or jurisdiction where participation in the grant program is prohibited under applicable U.S. federal, state or local laws or the laws of other countries
 - Not be subject to any existing obligations to third parties (such as contractual obligations to an employer) that would restrict or prohibit your participation in the grants program
@@ -69,17 +69,6 @@ portalId: "8112310",
 formId: "153a67b6-b8c9-41cc-8c8f-decfb9826487"
 });
 </script>
-
-## Timeline
-Applications are now open!
-
-| Date | Milestone |
-| :--- | :--- |
-| 31 August 2024 | First submission deadline |
-| 30 September 2024 | Grant committee review closes |
-| 02 October 2024 | Estimated notification to applicants |
-
-Proposals submitted after the first submission deadline will be evaluated on a rolling basis.
 
 ## Questions
 
