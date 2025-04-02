@@ -3,7 +3,7 @@ menuPre = "<i class='fa-fw fas fa-scroll'></i> "
 title = 'TLA+ Foundation Grant Program Call for Proposals'
 linkTitle = 'TLA+ Foundation Grant Program Call for Proposals'
 description = "The 2025 TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Depending on the scope of proposed work, grants may range from USD$1000 to USD$100,000. Applicants who receive grants are expected to complete their work within one year, though exceptions may be made on a case-by-case basis."
-date = 2025-05-28T15:18:27-07:00
+date = 2024-05-28T15:18:27-07:00
 draft = false
 +++
 
