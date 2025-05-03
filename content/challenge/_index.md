@@ -20,7 +20,6 @@ weight = 3
 
 #### **Example Project Areas**
 
-<!-- {{< youtube id="PIgzjagvq2s" autoplay=true loop=true >}} -->
 {{< youtube id="JX_kTGHoYT8" autoplay=true loop=true controls=false >}}
 
 Participants may submit work including, but not limited to:
@@ -30,14 +29,15 @@ Participants may submit work including, but not limited to:
 * LLM-driven tools for automated grading in education
 * Visualizations of specifications or execution traces
 * Generation of type annotations for tools like Apalache
-* Synthesis of inductive invariant candidates, validated via TLC or Apalache
-* Synthesis of entire specifications from source code and design documents.
+* Synthesis of inductive invariant candidates, validated via [TLC](https://github.com/tlaplus/tlaplus) or [Apalache](https://github.com/apalache-mc/apalache/)
+* Synthesis of [TLAPS](https://github.com/tlaplus/tlapm) proofs
+* Synthesis of entire specifications from source code and design documents
 
 #### **Evaluation**
 
 Submissions will be judged by the **TLA+ Specification Language Committee (SLC)**
 
-The Jury will evaluate submissions based on their functionality, relevance to the TLA+ ecosystem, and the thoughtful use of AI. Submissions must be reproducible by the Jury. Passive formats, such as videos alone, are not sufficient. However, the Jury does not require a fully polished product—a prototype is sufficient. All submissions must be released under the MIT license, and any underlying AI models must be publicly available.
+The Jury will evaluate submissions based on their functionality, relevance to the TLA+ ecosystem, and the thoughtful use of AI. Submissions must be reproducible by the Jury. Passive formats, such as videos alone, are not sufficient. However, the Jury does not require a fully polished product—a prototype is sufficient. All submissions must be released under the [MIT license](https://opensource.org/license/mit), and any underlying AI models must be publicly available.
 
 The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated content—such as specs, invariants, visualizations, … —is checked using some form of verification such as the TLA+ tools.
 
@@ -45,8 +45,8 @@ The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated c
 
 Eligible participants must meet the following:
 
-* Prior engagement with the TLA+ community (e.g., contribution to mailing lists, forums, open-source repositories, conference presentations, or academic publications)
-* Must not be a member of the TLA+ Board or Specification Language Committee
+* Prior engagement with the TLA+ community (e.g., contribution to [mailing lists](https://groups.google.com/g/tlaplus), [forums](https://www.reddit.com/r/tlaplus/), [open-source repositories](https://github.com/tlaplus/), [conference presentations](https://conf.tlapl.us/), or [academic publications](https://scholar.google.com/scholar?q=TLA%2B))
+* Must not be a member of the TLA+ Foundation Board or Specification Language Committee
 * Must not be subject to any legal, contractual, export control, or jurisdictional restrictions that would preclude participation
 
 #### **Submission Timeline & Announcement**
