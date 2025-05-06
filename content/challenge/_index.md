@@ -43,10 +43,10 @@ The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated c
 
 {{% notice style="accent" title="" icon="bullhorn" %}}
 Catch the [live announcement](https://youtu.be/oFfTuHuTnVw) at the [TLA+ Community Event 2025](https://conf.tlapl.us/2025-etaps)!
+{{% /notice %}}
 
 {{< youtube id="oFfTuHuTnVw" autoplay=false loop=true controls=true >}}
 
-{{% /notice %}}
 
 #### **Participation Criteria**
 
