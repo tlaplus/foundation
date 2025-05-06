@@ -41,6 +41,12 @@ The Jury will evaluate submissions based on their functionality, relevance to th
 
 The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated content—such as specs, invariants, visualizations, … —is checked using some form of verification such as the TLA+ tools.
 
+{{% notice style="accent" title="" icon="bullhorn" %}}
+Catch the live announcement at the [TLA+ Community Event 2025](https://conf.tlapl.us/2025-etaps)!
+
+{{< youtube id="oFfTuHuTnVw" autoplay=false loop=true controls=true >}}
+{{% /notice %}}
+
 #### **Participation Criteria**
 
 Eligible participants must meet the following:
@@ -54,7 +60,6 @@ Eligible participants must meet the following:
 Submissions will open alongside this announcement. The deadline to submit entries for the challenge is two months from the announcement date on 07/03/2025. Submissions must be sent to genai@tlapl.us. The jury will select the winner one month after the submission period closes. We welcome innovative, technically robust, and practically valuable contributions that explore and expand the potential of GenAI within the context of TLA+. 
 
 For longer-term or foundational engineering and research efforts related to TLA+, we encourage you to explore the [TLA+ grant program](../grants/2024-grant-program/).
-
 
 <!-- https://gohugo.io/shortcodes/youtube/ -->
 <!-- https://docs.google.com/document/d/1QYpQQlgNJ-JHqM-GAfE9cEZt7bQaARgIc5qmbiuEKK4/edit?usp=sharing -->
