@@ -42,9 +42,8 @@ The Jury will evaluate submissions based on their functionality, relevance to th
 The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated content—such as specs, invariants, visualizations, … —is checked using some form of verification such as the TLA+ tools.
 
 {{% notice style="accent" title="" icon="bullhorn" %}}
-Catch the live announcement at the [TLA+ Community Event 2025](https://conf.tlapl.us/2025-etaps)!
+Catch the [live announcement](https://youtu.be/oFfTuHuTnVw) at the [TLA+ Community Event 2025](https://conf.tlapl.us/2025-etaps)!
 
-{{< youtube id="oFfTuHuTnVw" autoplay=false loop=true controls=true >}}
 {{% /notice %}}
 
 #### **Participation Criteria**
