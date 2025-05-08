@@ -58,7 +58,7 @@ Eligible participants must meet the following:
 
 #### **Submission Timeline & Announcement**
 
-Submissions will open alongside this announcement. The deadline to submit entries for the challenge is two months from the announcement date on 07/03/2025. Submissions must be sent to genai@tlapl.us. The jury will select the winner one month after the submission period closes. We welcome innovative, technically robust, and practically valuable contributions that explore and expand the potential of GenAI within the context of TLA+. 
+Submissions will open alongside this announcement. The deadline to submit entries for the challenge is *July 3, 2025*. Submissions must be sent to genai@tlapl.us. The jury will select the winner one month after the submission period closes. We welcome innovative, technically robust, and practically valuable contributions that explore and expand the potential of GenAI within the context of TLA+. 
 
 For longer-term or foundational engineering and research efforts related to TLA+, we encourage you to explore the [TLA+ grant program](../grants/2024-grant-program/).
 
