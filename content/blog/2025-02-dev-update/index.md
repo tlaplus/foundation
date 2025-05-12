@@ -57,6 +57,8 @@ At this point the tests cover most of the important parts of the language, altho
 ## Newbie Corner
 
 Here we highlight an issue that would be a good choice for new contributors!
+Before starting work, be sure to read the [contribution guidelines](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md) and discuss your planned approach with maintainers.
+
 This one is a bit more advanced than past months, but hopefully someone can rise to the challenge: we want TLC to [interpret expressions of the form `CHOOSE x : x ∈ S`](https://github.com/tlaplus/tlaplus/issues/619).
 Ordinarily this would be an unbounded choose error, but *this specific form* of the expression is obviously bounded (the bound is just given in the body!) and is much nicer to write than the clunky `CHOOSE x ∈ S : TRUE`.
 
@@ -68,6 +70,6 @@ To solve this issue you will need to:
 As a bonus you can extend this work to support larger sets of reasonable expressions, like `CHOOSE x : x ∈ S ∧ …`.
 
 Issues highlighted in past months have also yet to be claimed!
- - January 2025: [fix the PlusCal CLI `-labelRoot` option](https://github.com/tlaplus/tlaplus/issues/1092)
- - December 2024: [add parser support for backticks in strings](https://github.com/tlaplus/tlaplus/issues/802)
+ - January 2025: [fix the PlusCal CLI `-labelRoot` option](blog/2025-01-dev-update/#newbie-corner)
+ - December 2024: [add parser support for backticks in strings](blog/2024-12-dev-update/#newbie-corner)
 

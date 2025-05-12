@@ -57,6 +57,8 @@ Finally, things [Andrew Helwer](https://ahelwer.ca/) (author of this post) worke
 ### Newbie Corner
 
 Here we highlight an issue that would be a good choice for new contributors!
+Before starting work, be sure to read the [contribution guidelines](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md) and discuss your planned approach with maintainers.
+
 This time we're looking at PlusCal, a language which transpiles into TLA⁺.
 The transpilation process includes logic to insert linebreaks so the output TLA⁺ is readable.
 Unfortunately, in one case this logic has gone awry and results in [invalid TLA⁺ output on long procedure names](https://github.com/tlaplus/tlaplus/issues/370)!
@@ -67,10 +69,10 @@ Try various modifications of the reported failing test case to ensure that close
 Resubmit the combined changes in your own PR with credit to the original, using the `Co-authored-by:` git commit message trailer.
 
 Issues highlighted in past months have also yet to be claimed!
- - March 2025: [interpret expressions of the form `x' ⊆ S`](https://github.com/tlaplus/tlaplus/issues/336)
- - February 2025: [interpret expressions of the form `CHOOSE x : x ∈ S`](https://github.com/tlaplus/tlaplus/issues/619)
- - December 2024: [add parser support for backticks in strings](https://github.com/tlaplus/tlaplus/issues/802)
+ - March 2025: [interpret expressions of the form `x' ⊆ S`](blog/2025-03-dev-update/#newbie-corner)
+ - February 2025: [interpret expressions of the form `CHOOSE x : x ∈ S`](blog/2025-02-dev-update/#newbie-corner)
+ - December 2024: [add parser support for backticks in strings](blog/2024-12-dev-update/#newbie-corner)
 
 The following past highlighted issues have now been fixed:
- - Highlighted January 2025, fixed April 2025: [Krishna Padmasola](https://github.com/kpadmasola) completed [fix the PlusCal CLI `-labelRoot` option](https://github.com/tlaplus/tlaplus/issues/1092)
+ - Highlighted January 2025, fixed April 2025: [Krishna Padmasola](https://github.com/kpadmasola) completed [fix the PlusCal CLI `-labelRoot` option](blog/2025-01-dev-update/#newbie-corner)
 
