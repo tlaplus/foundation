@@ -50,6 +50,8 @@ Finally, things [Andrew Helwer](https://ahelwer.ca/) (author of this post) worke
 ## Newbie Corner
 
 Here we highlight an issue that would be a good choice for new contributors!
+Before starting work, be sure to read the [contribution guidelines](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md) and discuss your planned approach with maintainers.
+
 This one is substantial, similar in genre to last month: extending the Java-based TLA⁺ interpreter to handle a wider variety of expressions.
 Calvin Loncaric [proposed](https://github.com/tlaplus/tlaplus/issues/336) allowing `\subseteq`/`⊆` in TLA⁺ next-state relations; currently the interpreter only supports the logically-equivalent `∈ SUBSET` operator.
 This work could also be easily extended to support the `\subset`/`⊂` operator (without equality).
@@ -59,7 +61,7 @@ Similar to last month, the high-level steps required to implement this feature a
 1. Write tests to validate these changes.
 
 Issues highlighted in past months have also yet to be claimed!
- - February 2025: [interpret expressions of the form `CHOOSE x : x ∈ S`](https://github.com/tlaplus/tlaplus/issues/619)
- - January 2025: [fix the PlusCal CLI `-labelRoot` option](https://github.com/tlaplus/tlaplus/issues/1092)
- - December 2024: [add parser support for backticks in strings](https://github.com/tlaplus/tlaplus/issues/802)
+ - February 2025: [interpret expressions of the form `CHOOSE x : x ∈ S`](blog/2025-02-dev-update/#newbie-corner)
+ - January 2025: [fix the PlusCal CLI `-labelRoot` option](blog/2025-01-dev-update/#newbie-corner)
+ - December 2024: [add parser support for backticks in strings](blog/2024-12-dev-update/#newbie-corner)
 

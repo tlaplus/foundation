@@ -66,8 +66,9 @@ Finally, things I worked on over the past month-and-a-half - all funded by the T
 Quite a bit of stuff going on in TLA⁺ development!
 Don't be intimidated though, there is plenty of room and desire for newcomers.
 Join the mailing list and monthly community meeting to introduce yourself if you'd like to join in!
-
 Here I will highlight one issue each month that I think would be good for new contributors.
+Before starting work, be sure to read the [contribution guidelines](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md) and discuss your planned approach with maintainers.
+
 This month it's [the inability of the TLA⁺ parser to handle backticks in strings](https://github.com/tlaplus/tlaplus/issues/802).
 The primary reason this is a good first issue is that the required change seems very localized and tremendously unlikely to introduce any bugs; the second reason is that it's in a very well-tested part of the codebase (the syntax parser), which has the [standard TLA⁺ syntax test corpus](https://github.com/tlaplus/rfcs/tree/2a772d9dd11acec5d7dedf30abfab91a49de48b8/language_standard/tests/tlaplus_syntax) levied against it - a corpus you will contribute to as part of the fix!
 I hope to see somebody pick this up in December!

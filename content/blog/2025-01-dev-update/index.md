@@ -49,10 +49,12 @@ Finally, things [Andrew Helwer](https://ahelwer.ca/) (author of this post) worke
 ## Newbie Corner
 
 Here we pick one issue to highlight that would be a good choice for new contributors!
-This month it's [fixing the PlusCal CLI `-labelRoot` option](https://github.com/tlaplus/tlaplus/issues/1092).
+Before starting work, be sure to read the [contribution guidelines](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md) and discuss your planned approach with maintainers.
+
+This month it's [fixing the PlusCal CLI `-labelRoot` option](https://github.com/tlaplus/tlaplus/issues/1092) (update: this issue has now been fixed).
 PlusCal is a language that automatically transpiles to TLA⁺.
 The CLI exposes a few parameters to control this output, and one of them determines the name of the root next-state relation; this parameter wrongfully accepts arbitrary string input instead of ensuring the given name is a valid TLA⁺ identifier.
 The fix would require raising an error in the parameter parsing function if the user provides an invalid identifier.
 
-[Last month's](/blog/2024-12-dev-update/) highlighted starter issue has not yet been claimed; it's also a good choice!
+Last month's [highlighted starter issue](blog/2024-12-dev-update/#newbie-corner) has not yet been claimed; it's also a good choice!
 
