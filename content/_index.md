@@ -32,11 +32,11 @@ The core principles guide the actions of the foundation:
 
 ## Press Release
 
-The TLA+ Foundation's launch press release can be found [here](https://www.linuxfoundation.org/press/linux-foundation-launches-tlafoundation).
+The TLA+ Foundation's [launch press release](https://www.linuxfoundation.org/press/linux-foundation-launches-tlafoundation) can be found [here](https://www.linuxfoundation.org/press/linux-foundation-launches-tlafoundation).
 
 ## Members
 
-The TLA+ Foundation would not exist without the support of the Member organizations listed below. If your company or organization is interested in joining as a Member, please begin the process [here](https://enrollment.lfx.linuxfoundation.org/?project=tla).
+The TLA+ Foundation would not exist without the support of the Member organizations listed below. If your company or organization is interested in [joining as a Member](https://enrollment.lfx.linuxfoundation.org/?project=tla), please begin the process [here](https://enrollment.lfx.linuxfoundation.org/?project=tla).
 
 <table border="0" cellspacing="0"><tr>
   <td><a href="https://aws.amazon.com"><img src="logos/amazon-web-services-inc.svg" alt="AWS Logo" width="300" height="300"></a></td>
