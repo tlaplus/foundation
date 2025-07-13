@@ -11,7 +11,7 @@ staticDir = ['static']
     disableAssetsBusting = true
     disableLandingPageButton = false
     disableNextPrev = true
-    disableSearch = true
+    search.disable = true
     disableShortcutsTitle = false
     [Params.Author]
         Name = "TLA+ Foundation"
@@ -46,7 +46,6 @@ staticDir = ['static']
         name = 'Conferences and Events'
         url = 'https://conf.tlapl.us/home/'
         weight = 50
-
 
 [module]
 [[module.imports]]
