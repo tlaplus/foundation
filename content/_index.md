@@ -11,10 +11,6 @@ The TLA+ Foundation (TLAF) is an independent, non-profit organization dedicated 
 
 See the [TLA+ Foundation Charter](https://cdn.platform.linuxfoundation.org/agreements/tla.pdf) and the [TLA+ Technical Charter](docs/TLA%2B%20Project%20Technical%20Charter.pdf) for more details.
 
-{{% notice style="accent" title="Join the GenAI-accelerated TLA+ challenge" icon="bullhorn" %}}
-Join the [*GenAI-accelerated TLA+* challenge](challenge/) and win prizes! The challenge is an open call for submissions that explore the intersection of TLA+ and generative AI. Participants are invited to develop engineering-oriented solutions that advance the usability, accessibility, and automation of formal specification through the integration of GenAI. The deadline to submit entries for the challenge is two months from the announcement date on 07/03/2025. 
-{{% /notice %}}
-
 {{% notice style="accent" title="TLA+ Grant CFP Now Open" icon="bullhorn" %}}
 The TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Learn about the [Grant Program and application process](grants/2024-grant-program).
 {{% /notice %}}
