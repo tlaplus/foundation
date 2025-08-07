@@ -1,8 +1,9 @@
 +++
 title = "GenAI-accelerated TLA+ challenge"
 menu = "main"
+menuPre = "<i class='fa-solid fa-trophy'></i> "
 date = 2025-05-03
-weight = 3
+weight = 4
 +++
 
 
