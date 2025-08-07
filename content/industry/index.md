@@ -1,6 +1,8 @@
 +++
 title = "Industrial Use of TLA⁺"
 menu = "main"
+menuPre = "<i class='fa-solid fa-users'></i> "
+weight = 3
 +++
 
 ## Introduction
