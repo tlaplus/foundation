@@ -9,15 +9,59 @@ weight = 4
 
 {{< figure src="banner.png" alt="My image description" >}}
 
-###### The TLA+ Foundation, in collaboration with [NVIDIA](https://www.nvidia.com/en-us/), is pleased to announce the *GenAI-accelerated TLA+* challenge—an open call for submissions that explore the intersection of TLA+ and generative AI.
 
-###### This initiative aims to foster practical and innovative tooling, workflows, and approaches that bring the capabilities of generative AI and LLMs to TLA+. Participants are invited to develop engineering-oriented solutions that advance the usability, accessibility, and automation of formal specification through the integration of GenAI.
+###### 🏆 **Announcement: Winners of the 2025 TLAi+ Challenge**
 
-#### **Awards**
+<span style="font-size: 20px;">
 
-* **1st Place**: [Nvidia GeForce RTX 5090](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/) (sponsored by NVIDIA)
-* **2nd Place**: One-year single seat, individual subscription to [Github Copilot Pro+](https://github.com/github-copilot/pro-plus) (sponsored by the TLA+ Foundation)
-* **3rd Place**: One-year single seat, individual subscription to [Github Copilot Pro](https://github.com/github-copilot/pro) (sponsored by the TLA+ Foundation)
+The TLA+ Foundation, in collaboration with [NVIDIA](https://www.nvidia.com/en-us/), is pleased to announce the winners of the first GenAI-accelerated TLA+ Challenge—an open call for submissions showcasing creative and technically impressive work at the intersection of TLA+, formal methods, and AI-assisted development.
+
+</span>
+
+###### **🥇 First Place — Specula *(Code → Spec)***
+
+<span style="font-size: 1.3em;">
+
+[Specula](https://github.com/specula-org/Specula), developed by [Qian Cheng](https://github.com/Qian-Cheng-nju), [Dr. Tianyin Xu](https://siebelschool.illinois.edu/about/people/faculty/tyxu), and [Dr. Yu Huang](https://cs.nju.edu.cn/yuhuang/), is an open-source framework that automatically derives TLA+ specifications from source code and checks them against the implementation. It combines an LLM-based generator with a Control Flow Analyzer to ensure syntactic and structural correctness, then uses SandTable for trace validation. Demonstrated on etcd’s Raft (Go) and Asterinas’s SpinLock (Rust), Specula offers a reproducible path toward scaling automated specification to broader codebases and abstracting algorithmic intent.
+
+**Award**: [Nvidia GeForce RTX 5090](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/) (sponsored by NVIDIA)
+
+</span>
+
+###### **🥈 Second Place — Andrew Helwer *(LLM Token Restriction)***
+
+<span style="font-size: 1.3em;">
+
+[Andrew](https://ahelwer.ca) tested whether [local LLMs can be constrained to produce valid TLA+](https://codeberg.org/tlaplus/tla-constrain-llm) by restricting token generation. Using LlamaCpp’s GBNF syntax (context-free) and the Guidance framework (context-sensitive), he showed that grammar-based constraints can reliably enforce syntax and, in some cases, symbol definition. Adding TLA+ documentation to prompts improved results, and the language’s explicit symbol declarations make it well-suited to such constraints. This approach could complement or even surpass fine-tuning for niche languages.
+
+**Award**: One-year single seat, individual subscription to [Github Copilot Pro+](https://github.com/github-copilot/pro-plus) (sponsored by the TLA+ Foundation)
+
+</span>
+
+###### **🥉 Third Place — Gregory Terzian *(Spec → Code)***
+
+<span style="font-size: 1.3em;">
+
+[Gregory](https://github.com/gterzian) explored using [TLA+ as a blueprint for generating idiomatic, multithreaded Rust code](https://github.com/gterzian/_refinement). By applying TLA+’s refinement process in stages, the LLM is guided toward correct and efficient implementations, avoiding the ambiguity of natural language instructions. If this approach were combined with new TLA+ MCP server integrations, it could pave the way to fully verified, spec-driven code generation.
+
+**Award**: One-year single seat, individual subscription to [Github Copilot Pro](https://github.com/github-copilot/pro) (sponsored by the TLA+ Foundation)
+
+</span>
+
+###### 🙏 **Acknowledgements**
+
+<span style="font-size: 1.3em;">
+
+We warmly thank all participants for their submissions. The challenge was made possible thanks to NVIDIA and the TLA+ Foundation, whose generous sponsorship funded the prizes. We also invite other companies to consider donating prizes for future challenges to help grow the TLA+ ecosystem.  For those with larger, longer-term projects in mind, remember that the [TLA+ Grants Program](https://foundation.tlapl.us/grants/index.html) is open for proposals year-round.
+
+</span>
+
+
+-------------------------
+
+<p style="text-align: center;">The rest of this page is retained in its original form, preserved for posterity.</p>
+
+
 
 #### **Example Project Areas**
 
