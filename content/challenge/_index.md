@@ -22,7 +22,7 @@ The TLA+ Foundation, in collaboration with [NVIDIA](https://www.nvidia.com/en-us
 
 <span style="font-size: 1.3em;">
 
-[Specula](https://github.com/specula-org/Specula), developed by [Qian Cheng](https://github.com/Qian-Cheng-nju), [Dr. Tianyin Xu](https://siebelschool.illinois.edu/about/people/faculty/tyxu), and [Dr. Yu Huang](https://cs.nju.edu.cn/yuhuang/), is an open-source framework that automatically derives TLA+ specifications from source code and checks them against the implementation. It combines an LLM-based generator with a Control Flow Analyzer to ensure syntactic and structural correctness, then uses SandTable for trace validation. Demonstrated on etcd’s Raft (Go) and Asterinas’s SpinLock (Rust), Specula offers a reproducible path toward scaling automated specification to broader codebases and abstracting algorithmic intent.
+[Specula](https://github.com/specula-org/Specula), developed by [Qian Cheng](https://github.com/Qian-Cheng-nju), [Dr. Tianyin Xu](https://siebelschool.illinois.edu/about/people/faculty/tyxu), and [Dr. Yu Huang](https://cs.nju.edu.cn/yuhuang/), is an open-source framework that automatically derives TLA+ specifications from source code and checks them against the implementation. It combines an LLM-based generator with a Control Flow Analyzer to ensure syntactic and structural correctness, then uses trace validation to semantically align the spec and the implementation. Demonstrated on etcd’s Raft (Go) and Asterinas’s SpinLock (Rust), Specula offers a reproducible path toward scaling automated specification to broader codebases and abstracting algorithmic intent.
 
 **Award**: [Nvidia GeForce RTX 5090](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/) (sponsored by NVIDIA)
 
