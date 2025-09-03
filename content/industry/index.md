@@ -158,6 +158,14 @@ In 2022 OCI published a [blog post](https://blogs.oracle.com/cloud-infrastructur
 
 Calvin Loncaric, a principal engineer at Oracle, also gave [a talk at TLA+ Conference 2024](https://conf.tlapl.us/2024/) about how OCI uses TLA+ to find bugs in existing systems with hundreds of thousands of lines of code, not just as an ahead-of-time design tool.  The talk reveals that OCI has written hundreds of TLA+ specifications covering dozens of cloud services.
 
+## Google
+
+Google engineers used TLA+ and the TLAPS proof system to formally verify the _Jayanti–Tarjan Concurrent Union-Find_ data structures, which are deployed for large-scale clustering over tens of billions of data points.
+
+The verification was performed using _Meta-Configurations Tracking_ with TLA+/TLAPS, ensuring correctness of these concurrent algorithms before deployment. The data structures themselves are available through Google’s open-source [Graph Mining Library](https://github.com/google/graph-mining/blob/main/in_memory/connected_components/asynchronous_union_find.h), and the TLA+ specifications and proofs are publicly [available](https://github.com/visveswara/machine-certified-linearizability/blob/master/UnionFindTracker.tla) on [GitHub](https://github.com/uguryavuz/machine-certified-linearizability/blob/main/proofs/POPL24_JayantiTarjanUF.tla).
+
+For this work, Google awarded an (internal) _Platinum Award in Code Health_ for “formal verification of multiprocessor algorithms that underlie large-scale clustering.”
+
 ## OpenComRTOS
 
 The European Space Agency's *Rosetta* spacecraft, which flew to a comet, used a real-time operating system called *Virtuoso* to control some of its instruments.
