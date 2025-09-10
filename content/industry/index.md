@@ -120,6 +120,35 @@ We couldn't imagine that this would have been discovered through any of our test
 However, a candidate's knowledge of TLA⁺ is given significant weight in our evaluation.
 To us, it is a great indicator of those who really care about quality and correctness.
 
+## MongoDB
+
+MongoDB has applied TLA⁺ to core protocols within the MongoDB database over several years, as early as 2015, including distributed replication, dynamic reconfiguration, and distributed transactions. These are complex and highly concurrent protocols and systems, where testing alone is often not sufficient to catch and reproduce subtle design bugs.
+
+MongoDB engineers [emphasized](https://youtu.be/x9zSynTfLDE?feature=shared&t=73) the value derived from TLA⁺ in their experience specifying and model checking their core consensus protocol:
+
+> Without a formal model, it’s nearly impossible to get a complex distributed protocol right. TLA⁺ and TLC are tools that make this possible for practicing software engineers...Even very simple and abstract models can help catch non-trivial bugs.
+
+They also noted the value of these tools for accelerating rigorous design of complex protocols, 
+specifically during their [development of a novel dynamic reconfiguration protocol](https://www.mongodb.com/company/blog/technical/rapid-prototyping-safe-logless-reconfiguration-protocol-mongodb-tla-plus):
+
+
+> Model checking is an excellent tool for rapidly and precisely answering "what if" design questions. Our efforts also emphasized an important feature of lightweight, design-level formal methods techniques, which is about more than simply ensuring correctness of your system design. Rather, it enables the exploration of protocol optimizations at a level of aggressiveness and velocity that would typically be infeasible with manual design methods. From this perspective, we can view these formal methods tools as not only a means for improving correctness of our systems and protocols, but as a means for efficient exploration of the optimization design space while maintaining a high correctness bar.
+
+They have also employed TLA⁺ for model-based trace checking and for modular specification and model-based verification of distributed transactions, writing about their experiences in several papers:
+
+> [**Extreme Modeling in Practice**](https://dl.acm.org/doi/10.14778/3397230.3397233)
+> 
+> A. Jesse Jiryu Davis, Max Hirschorn, Judah Schvimer, VLDB 2020
+>
+> [**Fault-Tolerant Replication with Pull-Based Consensus in MongoDB**](https://www.usenix.org/conference/nsdi21/presentation/zhou)
+> 
+> Siyuan Zhou, Shuai Mu, NSDI 2021
+> 
+> [**Design and Modular Verification of Distributed Transactions in MongoDB**](https://www.vldb.org/pvldb/vol18/p5045-schultz.pdf)
+> 
+> William Schultz, Murat Demirbas, VLDB 2025
+
+
 ## OpenComRTOS
 
 The European Space Agency's *Rosetta* spacecraft, which flew to a comet, used a real-time operating system called *Virtuoso* to control some of its instruments.
