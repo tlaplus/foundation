@@ -122,13 +122,13 @@ To us, it is a great indicator of those who really care about quality and correc
 
 ## MongoDB
 
-MongoDB engineers have applied TLA⁺ to core protocols within the MongoDB database over several years, as early as 2015, including distributed replication, dynamic reconfiguration, and distributed transactions. These are complex and highly concurrent protocols and systems, where testing alone is often not sufficient to catch and reproduce subtle design bugs.
+MongoDB has applied TLA⁺ to core protocols within the MongoDB database over several years, as early as 2015, including distributed replication, dynamic reconfiguration, and distributed transactions. These are complex and highly concurrent protocols and systems, where testing alone is often not sufficient to catch and reproduce subtle design bugs.
 
 MongoDB engineers [emphasized](https://youtu.be/x9zSynTfLDE?feature=shared&t=73) the value derived from TLA⁺ in their experience specifying and model checking their core consensus protocol:
 
 > Without a formal model, it’s nearly impossible to get a complex distributed protocol right. TLA⁺ and TLC are tools that make this possible for practicing software engineers...Even very simple and abstract models can help catch non-trivial bugs.
 
-They also note the value of these tools for accelerating rigorous design of complex protocols, 
+They also noted the value of these tools for accelerating rigorous design of complex protocols, 
 specifically during their [development of a novel dynamic reconfiguration protocol](https://www.mongodb.com/company/blog/technical/rapid-prototyping-safe-logless-reconfiguration-protocol-mongodb-tla-plus):
 
 
@@ -138,26 +138,21 @@ They have also employed TLA⁺ for model-based trace checking and for modular sp
 
 > [**Extreme Modeling in Practice**](https://dl.acm.org/doi/10.14778/3397230.3397233)
 > 
-> A. Jesse Jiryu Davis, Max Hirschorn, Judah Schvimer
+> A. Jesse Jiryu Davis, Max Hirschorn, Judah Schvimer, VLDB 2020
 >
-> VLDB 2020
 > 
-> &nbsp;
+> 
 > 
 > [**Fault-Tolerant Replication with Pull-Based Consensus in MongoDB**](https://www.usenix.org/conference/nsdi21/presentation/zhou)
 > 
-> Siyuan Zhou, Shuai Mu
+> Siyuan Zhou, Shuai Mu, NSDI 2021
 > 
-> NSDI 2021
 > 
->
-> &nbsp; 
->
 > [**Design and Modular Verification of Distributed Transactions in MongoDB**](https://www.vldb.org/pvldb/vol18/p5045-schultz.pdf)
 > 
-> William Schultz, Murat Demirbas
+> William Schultz, Murat Demirbas, VLDB 2025
 > 
-> VLDB 2025
+> 
 
 
 
