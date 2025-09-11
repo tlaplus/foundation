@@ -140,20 +140,13 @@ They have also employed TLA⁺ for model-based trace checking and for modular sp
 > 
 > A. Jesse Jiryu Davis, Max Hirschorn, Judah Schvimer, VLDB 2020
 >
-> 
-> 
-> 
 > [**Fault-Tolerant Replication with Pull-Based Consensus in MongoDB**](https://www.usenix.org/conference/nsdi21/presentation/zhou)
 > 
 > Siyuan Zhou, Shuai Mu, NSDI 2021
 > 
-> 
 > [**Design and Modular Verification of Distributed Transactions in MongoDB**](https://www.vldb.org/pvldb/vol18/p5045-schultz.pdf)
 > 
 > William Schultz, Murat Demirbas, VLDB 2025
-> 
-> 
-
 
 
 ## OpenComRTOS
