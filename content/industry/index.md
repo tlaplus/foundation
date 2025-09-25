@@ -150,19 +150,19 @@ They have also employed TLA⁺ for model-based trace checking and for modular sp
 
 ## Oracle
 
-Oracle Cloud Infrastructure (OCI) has been using TLA+ since 2015 to verify storage systems and critical low-level services.
+Oracle Cloud Infrastructure (OCI) has been using TLA⁺ since 2015 to verify storage systems and critical low-level services.
 
-In 2022 OCI published a [blog post](https://blogs.oracle.com/cloud-infrastructure/post/sleeping-soundly-with-the-help-of-tla) about one specific use of TLA+ to verify a system that automates certain hard drive operations:
+In 2022 OCI published a [blog post](https://blogs.oracle.com/cloud-infrastructure/post/sleeping-soundly-with-the-help-of-tla) about one specific use of TLA⁺ to verify a system that automates certain hard drive operations:
 
-> TLA+ has been a huge success. We have uncovered many subtle bugs like our example before they caused damage in production. The drive manager has also been a huge success: No data lost and thousands of operator hours saved. We believe this success is due in part to the extra time that we spent formalizing and verifying the design before deploying the system.
+> TLA⁺ has been a huge success. We have uncovered many subtle bugs like our example before they caused damage in production. The drive manager has also been a huge success: No data lost and thousands of operator hours saved. We believe this success is due in part to the extra time that we spent formalizing and verifying the design before deploying the system.
 
-Calvin Loncaric, a principal engineer at Oracle, also gave [a talk at TLA+ Conference 2024](https://conf.tlapl.us/2024/) about how OCI uses TLA+ to find bugs in existing systems with hundreds of thousands of lines of code, not just as an ahead-of-time design tool.  The talk reveals that OCI has written hundreds of TLA+ specifications covering dozens of cloud services.
+Calvin Loncaric, a principal engineer at Oracle, also gave [a talk at TLA⁺ Conference 2024](https://conf.tlapl.us/2024/) about how OCI uses TLA⁺ to find bugs in existing systems with hundreds of thousands of lines of code, not just as an ahead-of-time design tool.  The talk reveals that OCI has written hundreds of TLA⁺ specifications covering dozens of cloud services.
 
 ## Google
 
-Google engineers used TLA+ and the TLAPS proof system to formally verify the _Jayanti–Tarjan Concurrent Union-Find_ data structures, which are deployed for large-scale clustering over tens of billions of data points.
+Google engineers used TLA⁺ and the TLAPS proof system to formally verify the _Jayanti–Tarjan Concurrent Union-Find_ data structures, which are deployed for large-scale clustering over tens of billions of data points.
 
-The verification was performed using _Meta-Configurations Tracking_ with TLA+/TLAPS, ensuring correctness of these concurrent algorithms before deployment. The data structures themselves are available through Google’s open-source [Graph Mining Library](https://github.com/google/graph-mining/blob/main/in_memory/connected_components/asynchronous_union_find.h), and the TLA+ specifications and proofs are publicly [available](https://github.com/visveswara/machine-certified-linearizability/blob/master/UnionFindTracker.tla) on [GitHub](https://github.com/uguryavuz/machine-certified-linearizability/blob/main/proofs/POPL24_JayantiTarjanUF.tla).
+The verification was performed using _Meta-Configurations Tracking_ with TLA⁺/TLAPS, ensuring correctness of these concurrent algorithms before deployment. The data structures themselves are available through Google’s open-source [Graph Mining Library](https://github.com/google/graph-mining/blob/main/in_memory/connected_components/asynchronous_union_find.h), and the TLA⁺ specifications and proofs are publicly [available](https://github.com/visveswara/machine-certified-linearizability/blob/master/UnionFindTracker.tla) on [GitHub](https://github.com/uguryavuz/machine-certified-linearizability/blob/main/proofs/POPL24_JayantiTarjanUF.tla).
 
 For this work, Google awarded an (internal) _Platinum Award in Code Health_ for “formal verification of multiprocessor algorithms that underlie large-scale clustering.”
 
