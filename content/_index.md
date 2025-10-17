@@ -38,3 +38,7 @@ The TLA+ Foundation would not exist without the support of the Member organizati
   <td><a href="https://aws.amazon.com"><img src="logos/amazon-web-services-inc.svg" alt="AWS Logo" width="300" height="300"></a></td>
   <td><a href="https://oracle.com"><img src="logos/oracle-america-inc.png" alt="Oracle Logo" width="300" height="100"></a></td>
 </tr></table>
+
+## Contact
+
+For general inquiries, please reach out to us at [contact@lists.tlapl.us](mailto:contact@lists.tlapl.us).
