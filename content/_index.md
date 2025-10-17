@@ -41,4 +41,4 @@ The TLA+ Foundation would not exist without the support of the Member organizati
 
 ## Contact
 
-For general inquiries, please reach out to us at [contact@lists.tlapl.us](mailto:contact@lists.tlapl.us).
+For general inquiries, please reach out to us at [contact@lists.tlapl.us](mailto:contact@lists.tlapl.us). For technical questions or issues, please use the appropriate issue tracker at https://github.com/tlaplus.
