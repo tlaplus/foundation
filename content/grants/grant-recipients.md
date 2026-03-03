@@ -2,7 +2,7 @@
 menuPre = "<i class='fa-fw fas fa-scroll'></i> "
 title = 'TLA+ Foundation Grant Recipients'
 linkTitle = 'Grant Recipients'
-description = "Projects funded by the TLA+ Foundation Grant Program."
+description = "The TLA+ Foundation is pleased to announce the projects that have been funded by the TLA+ Foundation Grant Program. Grant recipients are selected based on their potential to advance TLA+ technology and benefit the broader community."
 date = 2026-03-02T00:00:00-07:00
 draft = false
 weight = 50
