@@ -5,6 +5,7 @@ linkTitle = 'TLA+ Foundation Grant Recipients'
 description = "Grant Recipient Description"
 date = 2026-03-02T00:00:00-07:00
 draft = false
+weight = 50
 +++
 
 # TLA+ Foundation is pleased to announce that the following projects have been funded by the TLA+ Foundation Grant Program. 
