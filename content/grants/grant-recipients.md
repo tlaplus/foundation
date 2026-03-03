@@ -3,7 +3,7 @@ menuPre = "<i class='fa-fw fas fa-scroll'></i> "
 title = 'TLA+ Foundation Grant Recipients'
 linkTitle = 'TLA+ Foundation Grant Recipients'
 description = "Grant Recipient Description"
-date = 2026-03-03T15:18:27-07:00
+date = 2026-03-02T00:00:00-07:00
 draft = false
 +++
 
