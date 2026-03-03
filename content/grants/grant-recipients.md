@@ -8,8 +8,7 @@ draft = false
 weight = 50
 +++
 
-# TLA+ Foundation is pleased to announce that the following projects have been funded by the TLA+ Foundation Grant Program. 
-
+TLA+ Foundation is pleased to announce that the following projects have been funded by the TLA+ Foundation Grant Program.
 
 ## 2025
 
