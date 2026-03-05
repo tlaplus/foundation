@@ -25,7 +25,7 @@ The next step is to integrate the proof decomposition actions into the proof obl
 
 ## 2024
 
-### PlusCal Extensions, Unicode Adoption, and TLC Improvements
+### PlusCal Extensions, Unicode Adoption, and SANY Improvements
 
 **Lead:** Andrew Helwer  
 **Grant:** $93,000
