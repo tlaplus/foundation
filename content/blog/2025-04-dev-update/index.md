@@ -17,7 +17,7 @@ If you're interested in getting involved in the TLA⁺ community:
 
 ### Organization & user updates
 
-- The program for the [TLA⁺ Community Event 2025](https://conf.tlapl.us/2025-etaps/) has now been announced!
+- The program for the [TLA⁺ Community Event 2025](/events/2025-etaps/) has now been announced!
   It will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   Hope to see you there!
 - The TLA⁺ Foundation grant program is continuing on a rolling basis; please [submit a proposal](/grants/2024-grant-program/) if you have ideas to improve TLA⁺ so the Foundation can support you financially as you work on them.

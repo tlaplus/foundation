@@ -17,7 +17,7 @@ If you're interested in getting involved in the TLA⁺ community:
 
 ### Organizational Updates
 
-- The [2025 TLA⁺ Community Event](https://conf.tlapl.us/2025-etaps/) was held alongside [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
+- The [2025 TLA⁺ Community Event](/events/2025-etaps/) was held alongside [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   We had a good slate of talks, and the recordings have now been posted.
   Thanks to the organizers [Igor Konnov](https://konnov.phd/), [Markus Kuppe](https://github.com/lemmy/), [Murat Demirbas](https://cse.buffalo.edu/~demirbas/), and [Stephan Merz](https://members.loria.fr/SMerz/index.html) for putting on a great conference!
 - The TLA⁺ Foundation, in collaboration with NVIDIA, is holding a [GenAI-Accelerated TLA⁺ Challenge](https://foundation.tlapl.us/challenge/)!

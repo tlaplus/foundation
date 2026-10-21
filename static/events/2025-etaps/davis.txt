@@ -1,0 +1,19 @@
+From: "A. Jesse Jiryu Davis" <jesse@mongodb.com>
+Subject: [tla2025] TLA+ Community Event proposal
+Date: 1 March 2025 at 15:02:22 GMT+1
+To: tla2025@inria.fr
+Reply-To: tla2025@inria.fr
+
+Hello, I propose the following short (25-minute) talk:
+
+"Are We Serious About Using TLA+ For Statistical Properties?"
+
+In 2022, Marc Brooker wrote "Formal Methods Only Solve Half My Problems", arguing that it's not enough for a formal spec to validate a protocol's safety and liveness: we should also have a formal method for analyzing performance. That year, Markus Kuppe and Jack Vanlightly presented "Obtaining Statistical Properties via TLC Simulation". They described how to write a TLA+ spec and use TLC to measure statistics, such as how quickly a protocol determines a node has failed. They use a new Randomization module to control the probabilities of various state transitions, and the TLCSet operator to save measurements, and the CSV module to output them for later statistical analysis.
+
+Their method is clever and useful. But it's insufficient if we're serious about using TLA+ for statistics. The Randomization module only gives us uniform distributions with integer parameters. Performance modeling requires a variety of distributions, such as Poisson, exponential, and Zipf. Limiting probabilities to ratios of integers is an artifact of our unfinished tooling; we should give TLA+ authors the freedom to choose whatever probabilities they want.
+
+TLCSet and the CSV module provide a manual, low-level API to save statistics. Compared to safety and liveness checking, which are first-class features of the language and tools, statistical modeling requires a TLA+ author to write finicky code which clutters up the specification. We should provide a concise and easy API for saving statistics.
+
+There are purpose-built performance modeling tools such as PRISM and the Java Modeling Tools. The new FizzBee language promises to combine correctness checking and performance modeling in one formal language. I'll review these tools' features and discuss which is appropriate for TLA+.
+
+We should decide as a community when and whether to commit to statistical features in TLA+. So far, it's been helpful to keep these features in modules instead of making irrevocable changes to the language. How much farther can we take this approach? If we decide that performance modeling is a first-class feature of TLA+, what is the ideal syntax and user experience? I'll present some ideas of my own, but my goal is to provoke a conversation.

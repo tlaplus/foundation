@@ -1,6 +1,5 @@
 +++
 title = "Industrial Use of TLA⁺"
-menu = "main"
 menuPre = "<i class='fa-solid fa-users'></i> "
 weight = 3
 +++
@@ -156,7 +155,7 @@ In 2022 OCI published a [blog post](https://blogs.oracle.com/cloud-infrastructur
 
 > TLA⁺ has been a huge success. We have uncovered many subtle bugs like our example before they caused damage in production. The drive manager has also been a huge success: No data lost and thousands of operator hours saved. We believe this success is due in part to the extra time that we spent formalizing and verifying the design before deploying the system.
 
-Calvin Loncaric, a principal engineer at Oracle, also gave [a talk at TLA⁺ Conference 2024](https://conf.tlapl.us/2024/) about how OCI uses TLA⁺ to find bugs in existing systems with hundreds of thousands of lines of code, not just as an ahead-of-time design tool.  The talk reveals that OCI has written hundreds of TLA⁺ specifications covering dozens of cloud services.
+Calvin Loncaric, a principal engineer at Oracle, also gave [a talk at TLA⁺ Conference 2024](/events/2024/) about how OCI uses TLA⁺ to find bugs in existing systems with hundreds of thousands of lines of code, not just as an ahead-of-time design tool.  The talk reveals that OCI has written hundreds of TLA⁺ specifications covering dozens of cloud services.
 
 ## Google
 

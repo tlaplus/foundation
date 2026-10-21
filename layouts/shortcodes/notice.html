@@ -1,0 +1,4 @@
+<aside class="notice notice-{{ .Get "style" | default "info" }}">
+  {{ with .Get "title" }}<p class="notice-title">{{ . }}</p>{{ end }}
+  {{ .Inner }}
+</aside>

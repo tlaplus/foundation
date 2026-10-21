@@ -1,6 +1,5 @@
 +++
 title = "GenAI-accelerated TLA+ challenge"
-menu = "main"
 menuPre = "<i class='fa-solid fa-trophy'></i> "
 date = 2025-05-03
 weight = 4
@@ -89,7 +88,7 @@ The Jury will evaluate submissions based on their functionality, relevance to th
 The use of GenAI/LLMs is explicitly encouraged, provided that any AI-generated content—such as specs, invariants, visualizations, … —is checked using some form of verification such as the TLA+ tools.
 
 {{% notice style="accent" title="" icon="bullhorn" %}}
-Catch the [live announcement](https://youtu.be/oFfTuHuTnVw) at the [TLA+ Community Event 2025](https://conf.tlapl.us/2025-etaps)!
+Catch the [live announcement](https://youtu.be/oFfTuHuTnVw) at the [TLA+ Community Event 2025](/events/2025-etaps/)!
 {{% /notice %}}
 
 {{< youtube id="oFfTuHuTnVw" autoplay=false loop=true controls=true >}}
@@ -99,7 +98,7 @@ Catch the [live announcement](https://youtu.be/oFfTuHuTnVw) at the [TLA+ Communi
 
 Eligible participants must meet the following:
 
-* Prior engagement with the TLA+ community (e.g., contribution to [mailing lists](https://groups.google.com/g/tlaplus), [forums](https://www.reddit.com/r/tlaplus/), [open-source repositories](https://github.com/tlaplus/), [conference presentations](https://conf.tlapl.us/), or [academic publications](https://scholar.google.com/scholar?q=TLA%2B))
+* Prior engagement with the TLA+ community (e.g., contribution to [mailing lists](https://groups.google.com/g/tlaplus), [forums](https://www.reddit.com/r/tlaplus/), [open-source repositories](https://github.com/tlaplus/), [conference presentations](/events/), or [academic publications](https://scholar.google.com/scholar?q=TLA%2B))
 * Must not be a member of the TLA+ Foundation Board or Specification Language Committee
 * Must not be subject to any legal, contractual, export control, or jurisdictional restrictions that would preclude participation
 

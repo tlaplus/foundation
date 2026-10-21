@@ -1,0 +1,20 @@
+{{ $url := printf "https://www.youtube.com/feeds/videos.xml?channel_id=%s" site.Params.youtubeChannel }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ warnf "YouTube feed unavailable: %s" . }}
+  {{ else with .Value }}
+    {{ $feed := . | transform.Unmarshal }}
+    <ul class="videos">
+      {{ range first $.limit $feed.entry }}
+        {{ $id := .videoId }}
+        <li>
+          <a href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener">
+            <img loading="lazy" src="https://i.ytimg.com/vi/{{ $id }}/mqdefault.jpg" alt="">
+            <span class="video-title">{{ .title }}</span>
+            <time class="muted" datetime="{{ .published }}">{{ time.Format "January 2, 2006" .published }}</time>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

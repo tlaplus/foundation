@@ -1,0 +1,11 @@
+{{ $today := now.Format "2006-01-02" }}
+{{ $upcoming := slice }}
+{{ $past := slice }}
+{{ range (site.GetPage "/events").Sections.ByWeight }}
+  {{ if and .Params.event_date (ge (time.Format "2006-01-02" .Params.event_date) $today) }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ else }}
+    {{ $past = $past | append . }}
+  {{ end }}
+{{ end }}
+{{ return dict "upcoming" (sort $upcoming "Params.event_date") "past" $past }}

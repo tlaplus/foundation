@@ -16,7 +16,7 @@ If you're interested in getting involved in the TLA⁺ community:
 - Start hacking on the tools themselves [here](https://github.com/tlaplus/tlaplus)!
 
 Let's start with some organizational, conference, blog post, and user-side TLA⁺ happenings:
-- The [TLA⁺ Community Event 2025](https://conf.tlapl.us/2025-etaps/) will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
+- The [TLA⁺ Community Event 2025](/events/2025-etaps/) will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   Hope to see you there!
 - The TLA⁺ Foundation grant program is continuing on a rolling basis; please [submit a proposal](/grants/2024-grant-program/) if you have ideas to improve TLA⁺ so the Foundation can support you financially as you work on them.
 - [Concur 2025](https://conferences.au.dk/confest2025/concur), the 36th International Conference on Concurrency Theory, will take place August 25-30, 2025, at the University of Aarhus, Denmark.

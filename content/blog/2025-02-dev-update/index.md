@@ -17,7 +17,7 @@ If you're interested in getting involved in the TLA⁺ community:
 - Start hacking on the tools themselves [here](https://github.com/tlaplus/tlaplus)!
 
 Let's start with some interesting non-coding-related developments & announcements:
-- The [TLA⁺ Community Event 2025](https://conf.tlapl.us/2025-etaps/) will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
+- The [TLA⁺ Community Event 2025](/events/2025-etaps/) will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   The talk submission deadline is Friday, February 28th; hopefully we'll have some great talks in store and we look forward to seeing you there!
 - The TLA⁺ Foundation grant program is continuing on a rolling basis; please [submit a proposal](/grants/2024-grant-program/) if you have ideas to improve TLA⁺ so the Foundation can support you financially as you work on them.
 - In Europe, [ABZ 2025](https://abz-conf.org/site/2025/) - the 11th International Conference on Rigorous State-Based Methods - will take place from June 10th to 13th of 2025 in Düsseldorf, Germany and will hopefully have some TLA⁺-related talks.

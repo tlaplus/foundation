@@ -1,0 +1,2 @@
+{{/* Pages under these top-level paths belong to the Foundation. Leaf bundles such as /industry/ have no section, so match on the path. */}}
+{{ return in site.Params.foundationSections (index (split (strings.TrimPrefix "/" .Path) "/") 0) }}

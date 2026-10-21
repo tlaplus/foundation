@@ -1,0 +1,131 @@
+{{ define "main" }}
+{{ $foundation := site.GetPage "/foundation" }}
+{{ $grants := site.GetPage "/grants" }}
+{{ $recipients := site.GetPage "/grants/grant-recipients" }}
+{{ $industry := site.GetPage "/industry" }}
+{{ $latestGrant := index (index (index $recipients.Fragments.Headings 0).Headings 0).Headings 0 }}
+{{ $latestPost := index (where site.RegularPages "Section" "blog").ByDate.Reverse 0 }}
+{{ $events := partial "events-by-time.html" . }}
+{{ $upcoming := $events.upcoming }}
+{{ $past := $events.past }}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">The TLA⁺ specification language</p>
+      <h1 class="hero-title">Think above the code.</h1>
+      <p class="lede">{{ .Params.hero.lede }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ "/learn/" | relURL }}">Start learning</a>
+        <a class="btn" href="{{ "/tools/" | relURL }}">Get the tools</a>
+        <a class="btn btn-quiet" href="{{ $foundation.RelPermalink }}">The Foundation →</a>
+      </div>
+    </div>
+    {{ partial "spec.html" . }}
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="section-title">Start here</h2>
+    <div class="cards three">
+      {{ range slice
+        (dict "path" "/learn" "text" "Guides, video lectures, books, and worked examples, from a first spec to machine-checked proofs.")
+        (dict "path" "/tools" "text" "The VS Code extension, the TLC and Apalache model checkers, the TLAPS proof system, and more.")
+        (dict "path" "/community" "text" "The mailing list, monthly meetings, yearly events, and the projects on GitHub.") }}
+      {{ $text := .text }}
+      {{ with site.GetPage .path }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <h3>{{ .Title }} →</h3>
+        <p>{{ $text }}</p>
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Recent talks</h2>
+      <a class="more" href="https://www.youtube.com/@{{ site.Params.youtubeHandle }}" target="_blank" rel="noopener">All videos on YouTube →</a>
+    </div>
+    {{ partial "videos.html" (dict "limit" 6) }}
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap split">
+    <div>
+      <h2 class="section-title">{{ if $upcoming }}Upcoming events{{ else }}Events{{ end }}</h2>
+      <ol class="events">
+        {{ range first 3 $upcoming }}
+        <li>
+          {{ $d := .Params.event_date }}<time class="event-date" datetime="{{ time.Format "2006-01-02" $d }}"><span>{{ time.Format "Jan" $d }}</span><strong>{{ time.Format "2" $d }}</strong></time>
+          <div>{{ partial "event.html" . }}</div>
+        </li>
+        {{ else }}
+        <li class="no-date">
+          <div>
+            <a href="{{ "/events/" | relURL }}">Next TLA⁺ Community Event</a>
+            <p class="muted">Not announced yet.</p>
+          </div>
+        </li>
+        {{ end }}
+        <li class="no-date">
+          <div>
+            <a href="{{ site.Params.meetingsURL }}" target="_blank" rel="noopener">Monthly community meetings</a>
+            <p class="muted">Online, open to everyone. Schedule on the LFX calendar.</p>
+          </div>
+        </li>
+        {{ with index $past 0 }}
+        <li class="no-date"><div>{{ partial "event.html" . }}</div></li>
+        {{ end }}
+      </ol>
+      <a class="more" href="{{ "/events/" | relURL }}">All events →</a>
+    </div>
+    <div>
+      <h2 class="section-title">Used in industry</h2>
+      <p class="muted">Engineers use TLA⁺ to find design bugs in systems where failures are expensive.</p>
+      <ul class="industry">
+        {{ with $industry }}{{ $p := . }}{{ range .Fragments.Headings }}{{ range .Headings }}
+          {{ if not (in (slice "introduction" "other-use") .ID) }}<li><a href="{{ $p.RelPermalink }}#{{ .ID }}">{{ .Title | plainify }}</a></li>{{ end }}
+        {{ end }}{{ end }}{{ end }}
+      </ul>
+      <a class="more" href="{{ $industry.RelPermalink }}">Read how they use it →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">From the Foundation</h2>
+      <a class="more" href="{{ $foundation.RelPermalink }}">About the Foundation →</a>
+    </div>
+    <div class="cards three">
+      <a class="card" href="{{ $grants.RelPermalink }}">
+        <p class="card-kicker"><span class="dot live"></span> Grants · rolling</p>
+        <h3>Grant proposals are open year-round</h3>
+        <p>Funding for work that advances TLA⁺ tooling, research, and education.
+          {{ with $latestGrant }}Latest recipient: <em>{{ .Title | plainify }}</em>.{{ end }}</p>
+      </a>
+      {{ with $latestPost }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <p class="card-kicker">Dev update · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary | plainify | truncate 140 }}</p>
+      </a>
+      {{ end }}
+      <a class="card" href="{{ site.Params.joinURL }}" target="_blank" rel="noopener">
+        <p class="card-kicker">Membership</p>
+        <h3>Become a member</h3>
+        <p>Join the member organizations that support the TLA⁺ Foundation.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ partial "members.html" . }}
+{{ end }}

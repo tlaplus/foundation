@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">{{ partial "eyebrow.html" . }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ if .Params.year }}{{ with partial "event-meta.html" . }}<p class="muted">{{ . }}</p>{{ end }}{{ end }}
+    </header>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </div>
+</article>
+{{ end }}

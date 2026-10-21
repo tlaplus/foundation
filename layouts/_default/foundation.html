@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{ $grants := site.GetPage "/grants" }}
+{{ $recipients := site.GetPage "/grants/grant-recipients" }}
+{{ $latestGrant := index (index (index $recipients.Fragments.Headings 0).Headings 0).Headings 0 }}
+{{ $latestPost := index (where site.RegularPages "Section" "blog").ByDate.Reverse 0 }}
+{{ $industry := site.GetPage "/industry" }}
+{{ $challenge := site.GetPage "/challenge" }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">A Linux Foundation project</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    </header>
+    <div class="cards three">
+      <a class="card" href="{{ $grants.RelPermalink }}">
+        <p class="card-kicker"><span class="dot live"></span> Grants · rolling</p>
+        <h3>Grant proposals are open year-round</h3>
+        <p>Funding for work that advances TLA⁺ tooling, research, and education.
+          {{ with $latestGrant }}Latest recipient: <em>{{ .Title | plainify }}</em>.{{ end }}</p>
+      </a>
+      {{ with $latestPost }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <p class="card-kicker">Dev update · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary | plainify | truncate 140 }}</p>
+      </a>
+      {{ end }}
+      <a class="card" href="{{ $challenge.RelPermalink }}">
+        <p class="card-kicker">Challenge · 2025</p>
+        <h3>{{ $challenge.Title }}</h3>
+        <p>The 2025 TLAi+ Challenge winners have been announced.</p>
+      </a>
+      <a class="card" href="{{ $industry.RelPermalink }}">
+        <p class="card-kicker">Adoption</p>
+        <h3>{{ $industry.Title }}</h3>
+        <p>Companies that have described their use of TLA⁺ in public.</p>
+      </a>
+      <a class="card" href="{{ "/events/" | relURL }}">
+        <p class="card-kicker">Events</p>
+        <h3>Community Events and Conferences</h3>
+        <p>Past programs, slides, and recordings, and where the next event will be announced.</p>
+      </a>
+      <a class="card" href="#members">
+        <p class="card-kicker">Membership</p>
+        <h3>Become a member</h3>
+        <p>Join the member organizations that support the TLA⁺ Foundation.</p>
+      </a>
+    </div>
+  </div>
+</article>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <h2 class="section-title">What we stand for</h2>
+    <div class="cards four">
+      {{ range .Params.values }}
+      <div class="card plain"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+      {{ end }}
+    </div>
+    <div class="prose small">{{ .Content }}</div>
+  </div>
+</section>
+
+{{ partial "members.html" . }}
+{{ end }}

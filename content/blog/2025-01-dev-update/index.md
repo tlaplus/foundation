@@ -17,7 +17,7 @@ If you're interested in getting involved in the TLA⁺ community:
 - Start hacking on the tools themselves [here](https://github.com/tlaplus/tlaplus)!
 
 Let's start with some interesting non-coding-related developments & announcements:
-- The [TLA⁺ Community Event 2025](https://conf.tlapl.us/2025-etaps/) talk submission deadline is coming up soon, on February 7th.
+- The [TLA⁺ Community Event 2025](/events/2025-etaps/) talk submission deadline is coming up soon, on February 7th.
   The conference will be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   Get your submissions in soon!
 - East of the Atlantic, [ABZ 2025](https://abz-conf.org/site/2025/) - the 11th International Conference on Rigorous State-Based Methods - will take place from June 10th to 13th of 2025 in Düsseldorf, Germany.

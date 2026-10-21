@@ -1,0 +1,4 @@
+{{ $parent := .Parent }}
+{{ if and $parent (not $parent.IsHome) }}<a href="{{ $parent.RelPermalink }}">{{ $parent.LinkTitle }}</a>
+{{ else if partial "in-foundation.html" . }}{{ with site.GetPage "/foundation" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+{{ end }}

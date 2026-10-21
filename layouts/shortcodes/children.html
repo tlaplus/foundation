@@ -1,0 +1,5 @@
+<ul class="entries">
+  {{ range .Page.Pages.ByWeight }}
+  <li><a href="{{ .RelPermalink }}"><h2>{{ .LinkTitle }}</h2></a><p class="muted">{{ .Summary | plainify | truncate 200 }}</p></li>
+  {{ end }}
+</ul>

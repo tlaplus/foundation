@@ -22,7 +22,7 @@ Let's start with some interesting non-coding-related developments & announcement
   It's [freely available for download](https://lamport.azurewebsites.net/tla/science-book.html) but a physical edition is in the works.
   I've been reading & enjoying it and asking lots of questions on the mailing list.
   It's very much focused on the "TLA" part of TLA⁺ (meaning the Temporal Logic of Actions) so it's a good read if you want to go really in-depth on the logical theory underpinning the TLA⁺ language.
-- The [TLA⁺ Community Event 2025](https://conf.tlapl.us/2025-etaps/) was announced, to be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
+- The [TLA⁺ Community Event 2025](/events/2025-etaps/) was announced, to be co-located with [ETAPS 2025](https://etaps.org/2025/) in Hamilton, Ontario, Canada on May 4th, 2025.
   We hope to see you there!
   The talk proposal submission deadline is February 7th, 2025.
 - East of the Atlantic, [ABZ 2025](https://abz-conf.org/site/2025/) - the 11th International Conference on Rigorous State-Based Methods - will take place from June 10th to 13th of 2025 in Düsseldorf, Germany.

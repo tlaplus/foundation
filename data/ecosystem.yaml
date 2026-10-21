@@ -1,0 +1,205 @@
+# Links for the Learn, Tools and Community pages.
+# Each URL was checked live on 2026-10-21; rerun a link check before adding or changing one.
+# Item fields: name, url, text, and optionally by, note (status caveat), install.
+
+learn:
+  - title: Start here
+    items:
+      - name: The TLA⁺ Video Course
+        url: https://lamport.azurewebsites.net/video/videos.html
+        by: Leslie Lamport
+        text: Video lectures that teach programmers and engineers to write their own TLA⁺ specifications.
+      - name: TLA⁺ By Example
+        url: https://learning.tlapl.us/
+        text: Interactive examples. Write specs and run the TLC model checker in your browser.
+      - name: Learn TLA⁺
+        url: https://learntla.com/
+        by: Hillel Wayne
+        text: A free online guide to TLA⁺ and PlusCal for programmers.
+        note: Work in progress
+      - name: A High-Level View of TLA⁺
+        url: https://lamport.azurewebsites.net/tla/high-level-view.html
+        by: Leslie Lamport
+        text: What TLA⁺ is for, and how PlusCal, TLC and proofs fit together.
+
+  - title: Go deeper
+    items:
+      - name: PlusCal Tutorial
+        url: https://lamport.azurewebsites.net/tla/tutorial/home.html
+        by: Leslie Lamport
+        text: A 14-session tutorial on writing and checking algorithms in PlusCal.
+      - name: Specifying Systems
+        url: https://lamport.azurewebsites.net/tla/book.html
+        by: Leslie Lamport
+        text: The book on the TLA⁺ language and tools, free to download for personal use.
+        note: Predates TLA⁺ version 2
+      - name: TLA⁺ Version 2
+        url: https://lamport.azurewebsites.net/tla/tla2.html
+        by: Leslie Lamport
+        text: How the current language differs from the one in Specifying Systems.
+      - name: The TLA⁺ Hyperbook
+        url: https://lamport.azurewebsites.net/tla/hyperbook.html
+        by: Leslie Lamport
+        text: Its Proof Track introduces writing TLA⁺ proofs checked with TLAPS.
+        note: Unfinished
+      - name: The Specification Language TLA⁺
+        url: https://members.loria.fr/SMerz/papers/tla+logic2008.pdf
+        by: Stephan Merz
+        text: A paper introducing the language and its underlying logic.
+      - name: A Science of Concurrent Programs
+        url: https://lamport.azurewebsites.net/tla/science-book.html
+        by: Leslie Lamport
+        text: A book on the TLA logic itself, for readers who want the theory.
+
+  - title: Reference
+    items:
+      - name: TLA⁺ summary
+        url: https://lamport.azurewebsites.net/tla/summary-standalone.pdf
+        by: Leslie Lamport
+        text: A 7-page cheat sheet of TLA⁺ syntax and operators.
+      - name: PlusCal manual
+        url: https://lamport.azurewebsites.net/tla/c-manual.pdf
+        by: Leslie Lamport
+        text: The reference manual for PlusCal in its C syntax.
+        install: https://lamport.azurewebsites.net/tla/p-manual.pdf
+        installLabel: P-syntax version
+      - name: PlusCal Cheat Sheet
+        url: https://github.com/tlaplus/PlusCalCheatSheet
+        by: Stephan Merz
+        text: A compact PlusCal syntax cheat sheet.
+      - name: TLA⁺ Wiki
+        url: https://docs.tlapl.us/
+        text: The community wiki, covering learning, tools, the codebase and the community.
+
+  - title: Examples and workshops
+    items:
+      - name: TLA⁺ Examples
+        url: https://github.com/tlaplus/examples/
+        text: Specifications and models of varying complexity, from many fields.
+      - name: Dr. TLA⁺
+        url: https://github.com/tlaplus/DrTLAPlus
+        text: Talks that each study one algorithm or protocol through its specification, with video and slides.
+      - name: BlockingQueue
+        url: https://github.com/lemmy/BlockingQueue
+        by: Markus Kuppe
+        text: A step-by-step tutorial built around a blocking queue, used in trainings.
+      - name: EWD998
+        url: https://github.com/tlaplus-workshops/ewd998
+        by: Markus Kuppe
+        text: Workshop material that specifies a termination-detection algorithm.
+      - name: awesome-tlaplus
+        url: https://github.com/tlaplus/awesome-tlaplus
+        text: A curated list of TLA⁺ resources, including conference talk playlists.
+
+tools:
+  - title: Get started
+    items:
+      - name: TLA⁺ for VS Code
+        url: https://marketplace.visualstudio.com/items?itemName=tlaplus.vscode-ide
+        text: Language support and built-in TLC model checking for VS Code and Cursor. The easiest way to start. Also install Java.
+        install: https://open-vsx.org/extension/tlaplus/vscode-ide
+        installLabel: Open VSX
+      - name: TLA⁺ Tools
+        url: https://github.com/tlaplus/tlaplus
+        text: TLC, SANY, the PlusCal translator, TLATeX and a REPL in one jar, for the command line. Needs Java 11 or later.
+        install: https://github.com/tlaplus/tlaplus/releases/latest
+        installLabel: Latest release
+
+  - title: Check and prove
+    items:
+      - name: TLC
+        url: https://docs.tlapl.us/using:tlc:start
+        text: An explicit-state model checker and simulator for TLA⁺ specifications. Ships in the TLA⁺ Tools.
+      - name: Apalache
+        url: https://apalache-mc.org/
+        text: A symbolic model checker for TLA⁺ and Quint that hands specs to SMT solvers such as Z3.
+        install: https://apalache-mc.org/docs/apalache/installation/index.html
+        installLabel: Install
+      - name: TLAPS
+        url: https://github.com/tlaplus/tlapm
+        text: The TLA⁺ Proof System, which mechanically checks proofs written in TLA⁺.
+        install: https://github.com/tlaplus/tlapm/releases
+        installLabel: Releases
+        note: Current builds are pre-releases
+      - name: TLA⁺ debugger
+        url: https://docs.tlapl.us/using:debugger
+        text: Step through a specification and explore its state space interactively, from VS Code.
+      - name: SANY
+        url: https://docs.tlapl.us/using:sany
+        text: The parser and syntax checker for TLA⁺. Ships in the TLA⁺ Tools.
+
+  - title: Libraries and explorers
+    items:
+      - name: Community Modules
+        url: https://github.com/tlaplus/CommunityModules
+        text: Operators and modules contributed and curated by the TLA⁺ community.
+      - name: Spectacle
+        url: https://will62794.github.io/tla-web/
+        text: Explore, visualize and share TLA⁺ specifications in the browser.
+      - name: PlusPy
+        url: https://github.com/tlaplus/PlusPy
+        text: A Python interpreter for TLA⁺ specifications.
+      - name: PGo
+        url: https://github.com/DistCompiler/pgo
+        text: Compiles Modular PlusCal specifications into Go programs.
+
+  - title: Other editors
+    items:
+      - name: TLA⁺ Toolbox
+        url: https://docs.tlapl.us/using:toolbox
+        text: The original IDE for writing specs and running TLC and TLAPS.
+        note: Unmaintained. Use VS Code instead
+      - name: TLA⁺ for IntelliJ
+        url: https://plugins.jetbrains.com/plugin/17965-tla-
+        by: Haruki Okada
+        text: A TLA⁺ language plugin for JetBrains IDEs.
+        note: Unofficial
+      - name: tla-tools for Emacs
+        url: https://github.com/mrc/tla-tools
+        text: TLA⁺ editing support for Emacs.
+
+  - title: Build your own
+    items:
+      - name: Creating TLA⁺ tools
+        url: https://docs.tlapl.us/creating:start
+        text: A wiki page and devkit for building your own tools on top of the TLA⁺ codebase.
+      - name: TLA⁺ RFCs
+        url: https://github.com/tlaplus/rfcs
+        text: Proposals for changes to the TLA⁺ language.
+
+community:
+  - title: Ask and discuss
+    items:
+      - name: Mailing list
+        url: https://groups.google.com/g/tlaplus
+        text: The discussion group for users of TLA⁺, PlusCal and the tools. Posts from non-members are moderated.
+      - name: Mailing list archive
+        url: https://discuss.tlapl.us/
+        text: A browsable thread index of the list archive.
+      - name: r/tlaplus
+        url: https://www.reddit.com/r/tlaplus/
+        text: The TLA⁺ subreddit.
+
+  - title: Meet
+    items:
+      - name: Monthly community meetings
+        url: https://zoom-lfx.platform.linuxfoundation.org/meetings/tla?view=month
+        text: Monthly Zoom meetings to coordinate TLA⁺ development. Anyone can join from a browser.
+      - name: Community Events and Conferences
+        url: /events/
+        text: The yearly Community Event and occasional conferences, with past programs, slides and recordings.
+      - name: YouTube
+        url: https://www.youtube.com/@tlaplusfoundation
+        text: Conference talks and other TLA⁺ videos.
+
+  - title: Contribute
+    items:
+      - name: TLA⁺ on GitHub
+        url: https://github.com/tlaplus/
+        text: Home of the tools, the VS Code extension, the proof system, the examples and the modules.
+      - name: Issue tracker
+        url: https://github.com/tlaplus/tlaplus/issues
+        text: Bug reports and feature requests for TLC, SANY, the PlusCal translator and the Toolbox. The VS Code extension and TLAPS have their own trackers.
+      - name: Community wiki page
+        url: https://docs.tlapl.us/community
+        text: The wiki's list of community channels and meetings.

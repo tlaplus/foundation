@@ -1,0 +1,21 @@
+From: Andrew Helwer <ahelwer@pm.me>
+Subject: [tla2025] Talk submission: "It's never been easier to write TLA⁺ tooling!"
+Date: 13 February 2025 at 19:40:15 GMT+1
+To: "tla2025@inria.fr" <tla2025@inria.fr>
+Reply-To: tla2025@inria.fr
+
+I am allegedly part of organizing this conference so we can just throw this one in if there's a dearth of material. It would be a 25 minute talk.
+
+Title: It's never been easier to write TLA⁺ tooling!
+
+Summary:
+
+Let a thousand flowers bloom! While TLA⁺ development resources have focused on polishing the Java-based tools in recent years, we have also seen the development of novel applications like Spectacle, a web-based TLA⁺ interpreter written by William Schultz. Does this herald a new era for TLA⁺ language tooling?
+
+In this talk you'll learn about recent efforts to make it easy to write a minimal TLA⁺ parser, interpreter, and even model-checker. Many other languages enjoy great numbers of these toy implementations. Far from proving a distraction, these projects are actually critical to preparing community members to tackle the really difficult problems found in industrial-strength language tooling. Once you've implemented a TLA⁺ parser, all other TLA⁺ parsers become familiar to you!
+
+What difficult problems could these toy implementations prepare us for? The talk concludes with a call to action: the 1 billion states per minute initiative, which proposes writing a TLA⁺ bytecode interpreter to improve TLC throughput by 1,000 times or more. How can it be done? A tentative roadmap is proposed.
+
+Andrew Helwer
+
+

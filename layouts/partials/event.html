@@ -1,0 +1,3 @@
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ with partial "event-meta.html" . }}<p class="muted">{{ . }}</p>{{ end }}
+{{ if .Params.recordings }}<p class="tag">Slides and recordings</p>{{ end }}

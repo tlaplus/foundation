@@ -1,45 +1,7 @@
 +++
-title = 'TLA+ Foundation'
-linkTitle = 'TLA+ Foundation'
-archetype = "home"
-description = ""
-draft = false
+title = 'TLA⁺ Foundation'
+description = 'TLA⁺ is a language for designing, specifying, and checking concurrent and distributed systems. Find guides, tools, the community, and the TLA⁺ Foundation.'
+
+[hero]
+lede = 'TLA⁺ is a language for designing, specifying, and checking concurrent and distributed systems before you build them. Here you will find the guides, the tools, and the people around it, and the TLA⁺ Foundation that funds them.'
 +++
-
-## Goals of the Foundation
-The TLA+ Foundation (TLAF) is an independent, non-profit organization dedicated to fostering the adoption of the [TLA+ specification language](https://lamport.azurewebsites.net/tla/tla.html) in industry, academia, and education, guided by the overall goal of advancing the mathematical thinking in software engineering. The TLAF funds development related to TLA+ to broaden its use and facilitate a thriving [TLA+ community](https://groups.google.com/g/tlaplus), encouraging cooperation among members of that community.
-
-See the [TLA+ Foundation Charter](https://cdn.platform.linuxfoundation.org/agreements/tla.pdf) and the [TLA+ Technical Charter](docs/TLA%2B%20Project%20Technical%20Charter.pdf) for more details.
-
-{{% notice style="accent" title="TLA+ Grant CFP Now Open" icon="bullhorn" %}}
-The TLA+ Foundation Grant Program is aimed at advancing the state of the art in the TLA+ specification and fostering the experience of using TLA+ in research and industry. Learn about the [Grant Program and application process](grants/2024-grant-program).
-{{% /notice %}}
-
-## The values of the Foundation
-The core principles guide the actions of the foundation:
-
-* **Open source**. The TLA+ Foundation will embrace the open-source ethos wholeheartedly. Whenever the TLAF develops or sponsors the development of tools and infrastructure, it will all be open-source under a permissive license.  This is not limited to the result but also applies to how work is organized and carried out; the community at large has to be able to participate at each step of the journey.
- 
-* **Empowering the community**. While the TLAF raises resources to fund development work, it also encourages volunteer efforts from industry, academia, and individuals. It attempts to coordinate all contributions to maximize their benefit to TLA+ users.
-
-* **Transparent**. All formal decision-making will be publicly accessible. The TLAF also strives to share ideas early to enhance collaboration and avoid duplicate efforts. Only certain categories of sensitive information (e.g., financial data and matters concerning particular individuals) may be kept confidential.
-
-* **Open, friendly, and diverse**. The TLAF strives to make sure that everyone is welcome and all can [contribute](https://github.com/tlaplus/tlaplus/blob/master/CONTRIBUTING.md).  Also consider attending our [regular project meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/tla).
-
-## Press Release
-
-The TLA+ Foundation's [launch press release](https://www.linuxfoundation.org/press/linux-foundation-launches-tlafoundation) can be found [here](https://www.linuxfoundation.org/press/linux-foundation-launches-tlafoundation).
-
-## Members
-
-The TLA+ Foundation would not exist without the support of the Member organizations listed below. If your company or organization is interested in [joining as a Member](https://enrollment.lfx.linuxfoundation.org/?project=tla), please begin the process [here](https://enrollment.lfx.linuxfoundation.org/?project=tla).
-
-<table border="0" cellspacing="0"><tr>
-  <td><a href="https://aws.amazon.com"><img src="logos/amazon-web-services-inc.svg" alt="AWS Logo" width="300" height="300"></a></td>
-  <td><a href="https://oracle.com"><img src="logos/oracle-america-inc.png" alt="Oracle Logo" width="300" height="100"></a></td>
-  <td><a href="https://www.nvidia.com"><img src="logos/nvidia-logo-horiz-blk-16x9.png" alt="NVIDIA Logo" width="300" height="169"></a></td>
-</tr></table>
-
-## Contact
-
-For general inquiries, please reach out to us at [support@tlapl.us](mailto:support@tlapl.us). For technical questions or issues, please use the appropriate issue tracker at https://github.com/tlaplus.

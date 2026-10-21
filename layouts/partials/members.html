@@ -1,0 +1,12 @@
+<section class="section members" id="members">
+  <div class="wrap">
+    <h2 class="section-title">Members</h2>
+    <p class="muted">The TLA⁺ Foundation would not exist without the support of its member organizations.</p>
+    <ul class="logos">
+      {{ range site.Data.members }}
+      <li><a href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ .logo | relURL }}" alt="{{ .name }}"></a></li>
+      {{ end }}
+      <li><a class="join-tile" href="{{ site.Params.joinURL }}" target="_blank" rel="noopener"><strong>Your organization</strong><span>Become a member →</span></a></li>
+    </ul>
+  </div>
+</section>

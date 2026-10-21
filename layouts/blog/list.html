@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">{{ partial "eyebrow.html" . }}</p>
+      <h1>Monthly development updates</h1>
+      <p class="lede">What changed in the TLA⁺ tools and community each month. <a href="{{ with .OutputFormats.Get "rss" }}{{ .RelPermalink }}{{ end }}">Subscribe via RSS</a>.</p>
+    </header>
+    <ul class="entries dated">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+        <div>
+          <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
+          <p class="muted">{{ .Summary | plainify | truncate 200 }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</article>
+{{ end }}

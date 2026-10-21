@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $events := partial "events-by-time.html" . }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="hub-group">
+      <h2>Upcoming</h2>
+      {{ with $events.upcoming }}
+      <ol class="events">
+        {{ range . }}<li><div>{{ partial "event.html" . }}</div></li>{{ end }}
+      </ol>
+      {{ else }}
+      <p>The next event has not been announced yet. Announcements go to the <a href="https://groups.google.com/g/tlaplus" target="_blank" rel="noopener">mailing list</a>.</p>
+      {{ end }}
+      <p>The community also meets online every month. <a href="{{ site.Params.meetingsURL }}" target="_blank" rel="noopener">See the meeting calendar</a>.</p>
+    </section>
+
+    <section class="hub-group">
+      <h2>Past events</h2>
+      <ol class="entries dated">
+        {{ range $events.past }}<li><time>{{ .Params.year }}</time><div>{{ partial "event.html" . }}</div></li>{{ end }}
+      </ol>
+    </section>
+
+    {{ with .Content }}<section class="hub-group prose">{{ . }}</section>{{ end }}
+  </div>
+</article>
+{{ end }}

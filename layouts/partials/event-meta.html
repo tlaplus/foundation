@@ -1,0 +1,10 @@
+{{ $p := .Params }}
+{{ $meta := slice }}
+{{ with $p.event_date }}
+  {{ $when := time.Format "January 2, 2006" . }}
+  {{ with $p.end_date }}{{ $when = printf "%s to %s" (time.Format "January 2" $p.event_date) (time.Format "January 2, 2006" .) }}{{ end }}
+  {{ $meta = $meta | append $when }}
+{{ end }}
+{{ with $p.location }}{{ $meta = $meta | append . }}{{ end }}
+{{ with $p.colocated }}{{ $meta = $meta | append (printf "co-located with %s" .) }}{{ end }}
+{{ return delimit $meta " · " }}

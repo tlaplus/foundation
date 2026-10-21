@@ -1,0 +1,9 @@
+- name: Amazon Web Services
+  url: https://aws.amazon.com
+  logo: logos/amazon-web-services-inc.svg
+- name: Oracle
+  url: https://oracle.com
+  logo: logos/oracle-america-inc.svg
+- name: NVIDIA
+  url: https://www.nvidia.com
+  logo: logos/nvidia-logo-horiz-blk-16x9.png

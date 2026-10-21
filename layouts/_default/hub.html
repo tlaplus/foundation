@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ $groups := index site.Data.ecosystem .Params.group }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      <nav class="jump" aria-label="On this page">
+        {{ range $groups }}<a href="#{{ anchorize .title }}">{{ .title }}</a>{{ end }}
+      </nav>
+    </header>
+    {{ range $groups }}
+    <section class="hub-group" id="{{ anchorize .title }}">
+      <h2>{{ .title }}</h2>
+      <ul class="links">
+        {{ range $item := .items }}
+        {{ $external := strings.HasPrefix .url "http" }}
+        <li>
+          <h3><a href="{{ cond $external .url (relURL .url) }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .name }}</a></h3>
+          {{ with .by }}<p class="by">{{ . }}</p>{{ end }}
+          <p>{{ .text }}</p>
+          {{ if or .note .install }}
+          <p class="link-meta">
+            {{ with .note }}<span class="tag">{{ . }}</span>{{ end }}
+            {{ with .install }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $item.installLabel }} ↗</a>{{ end }}
+          </p>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

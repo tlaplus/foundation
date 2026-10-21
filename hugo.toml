@@ -1,52 +1,110 @@
 languageCode = 'en-us'
-title = 'TLA+ Foundation'
-pygmentsUseClassic = true
-PygmentsCodeFences = true
+title = 'TLA⁺ Foundation'
 enableRobotsTXT = true
 noChmod = true
-staticDir = ['static']
 
-[Params]
-    disableInlineCopyToClipBoard = false
-    disableAssetsBusting = true
-    disableLandingPageButton = false
-    disableNextPrev = true
-    search.disable = true
-    disableShortcutsTitle = false
-    [Params.Author]
-        Name = "TLA+ Foundation"
-    [Params.ThemeVariant]
-        identifier = 'tlaplus'
+[params]
+  description = 'An independent, non-profit home for the TLA⁺ specification language, part of the Linux Foundation.'
+  youtubeChannel = 'UCLHtwjeqBxVSEhjV0clKblA'
+  youtubeHandle = 'tlaplusfoundation'
+  joinURL = 'https://enrollment.lfx.linuxfoundation.org/?project=tla'
+  meetingsURL = 'https://zoom-lfx.platform.linuxfoundation.org/meetings/tla'
+  # Top-level paths that belong to the Foundation; the Foundation nav item stays current inside them.
+  foundationSections = ['blog', 'grants', 'industry', 'challenge']
 
-[markup]
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
 
-[menu]
-    [[menu.shortcuts]]
-        pre = '<i class="fa-fw fab fa-github"></i> '
-        name = 'GitHub'
-        url = 'https://github.com/tlaplus/'
-        weight = 10
+[menus]
+  [[menus.main]]
+    name = 'Learn'
+    pageRef = '/learn'
+    weight = 10
+  [[menus.main]]
+    name = 'Tools'
+    pageRef = '/tools'
+    weight = 20
+  [[menus.main]]
+    name = 'Community'
+    pageRef = '/community'
+    weight = 30
+  [[menus.main]]
+    name = 'Events'
+    pageRef = '/events'
+    weight = 40
+  [[menus.main]]
+    name = 'Foundation'
+    identifier = 'foundation'
+    pageRef = '/foundation'
+    weight = 50
 
-    [[menu.shortcuts]]
-        pre = '<i class="fa-fw fas fa-at"></i> '
-        name = 'Mailing List'
-        url = 'https://groups.google.com/g/tlaplus/'
-        weight = 30
+  [[menus.foundation]]
+    name = 'Grants'
+    pageRef = '/grants'
+    weight = 10
+  [[menus.foundation]]
+    name = 'News'
+    pageRef = '/blog'
+    weight = 20
+  [[menus.foundation]]
+    name = 'Used in industry'
+    pageRef = '/industry'
+    weight = 30
+  [[menus.foundation]]
+    name = 'GenAI challenge'
+    pageRef = '/challenge'
+    weight = 40
+  [[menus.foundation]]
+    name = 'Members'
+    pageRef = '/foundation'
+    params = { fragment = 'members' }
+    weight = 50
 
-    [[menu.shortcuts]]
-        pre = '<i class="fa-fw fas fa-inbox"></i> '
-        name = 'Mailing List Archive'
-        url = 'https://discuss.tlapl.us/'
-        weight = 40
+  [[menus.resources]]
+    name = "TLC"
+    url = 'https://docs.tlapl.us/using:tlc:start'
+    weight = 10
+  [[menus.resources]]
+    name = "TLAPS"
+    url = 'https://proofs.tlapl.us/'
+    weight = 20
+  [[menus.resources]]
+    name = "Apalache"
+    url = 'https://apalache-mc.org/'
+    weight = 30
+  [[menus.resources]]
+    name = "Examples"
+    url = 'https://examples.tlapl.us/'
+    weight = 40
+  [[menus.resources]]
+    name = "TLA⁺ By Example"
+    url = 'https://learning.tlapl.us/'
+    weight = 50
 
-    [[menu.shortcuts]]
-        pre = '<i class="fa-fw fas fa-calendar-day"></i> '
-        name = 'Conferences and Events'
-        url = 'https://conf.tlapl.us/home/'
-        weight = 50
-
-[module]
-[[module.imports]]
-    path = 'github.com/McShelby/hugo-theme-relearn'
+  [[menus.community]]
+    name = 'GitHub'
+    url = 'https://github.com/tlaplus/'
+    weight = 10
+  [[menus.community]]
+    name = 'Mailing list'
+    url = 'https://groups.google.com/g/tlaplus/'
+    weight = 20
+  [[menus.community]]
+    name = 'Mailing list archive'
+    url = 'https://discuss.tlapl.us/'
+    weight = 25
+  [[menus.community]]
+    name = 'Docs wiki'
+    url = 'https://docs.tlapl.us/'
+    weight = 30
+  [[menus.community]]
+    name = 'Events'
+    pageRef = '/events'
+    weight = 40
+  [[menus.community]]
+    name = 'YouTube'
+    url = 'https://www.youtube.com/@tlaplusfoundation'
+    weight = 50
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 2

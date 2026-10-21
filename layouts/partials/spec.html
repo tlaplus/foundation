@@ -1,0 +1,17 @@
+{{/* Renders the TLC-checked spec in assets/spec as Unicode. scripts/check-spec.sh checks the same file. */}}
+{{ $tla := resources.Get "spec/Foundation.tla" }}
+{{ $cfg := resources.Get "spec/Foundation.cfg" }}
+{{ $s := $tla.Content | strings.TrimRight "\n" }}
+{{ $symbols := slice
+  (slice " == " " ≜ ") (slice `/\` "∧") (slice `\/` "∨") (slice `\notin` "∉") (slice `\in` "∈")
+  (slice `\cup` "∪") (slice `\subseteq` "⊆") (slice "[]" "□") (slice "<>" "◇") (slice "~>" "↝")
+  (slice `\E` "∃") (slice `\A` "∀") (slice "<<" "⟨") (slice ">>" "⟩") }}
+{{ range $symbols }}{{ $s = replace $s (index . 0) (index . 1) }}{{ end }}
+{{ $s = htmlEscape $s }}
+{{ $s = replace $s "_vars" "<sub>vars</sub>" }}
+{{ $s = replaceRE `\b(MODULE|CONSTANT|VARIABLES|UNCHANGED)\b` `<span class="kw">$1</span>` $s }}
+<figure class="formula">
+  <pre aria-label="A TLA⁺ specification">{{ $s | safeHTML }}</pre>
+  <figcaption>A complete spec, checked by TLC.
+    Get <a href="{{ $tla.RelPermalink }}" download>Foundation.tla</a> and <a href="{{ $cfg.RelPermalink }}" download>Foundation.cfg</a>.</figcaption>
+</figure>

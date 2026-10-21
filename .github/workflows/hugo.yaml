@@ -29,6 +29,15 @@ jobs:
           hugo-version: '0.148.1'
           extended: true
 
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Check homepage spec
+        run: scripts/check-spec.sh
+
       - name: Build Main
         if: github.repository_owner == 'tlaplus'
         run: hugo --baseURL=$PROD_SITE --minify

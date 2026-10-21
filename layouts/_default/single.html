@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $toc := gt .WordCount 1500 }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">{{ partial "eyebrow.html" . }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ if eq .Section "blog" }}<p class="muted"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time> · {{ .ReadingTime }} min read</p>{{ end }}
+    </header>
+    <div class="{{ if $toc }}with-toc{{ end }}">
+      {{ if $toc }}<aside class="toc"><p class="toc-h">On this page</p>{{ .TableOfContents }}</aside>{{ end }}
+      <div class="prose">{{ .Content }}</div>
+    </div>
+  </div>
+</article>
+{{ end }}

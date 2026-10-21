@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400&family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..700&display=swap">
+  {{ with resources.Get "css/site.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="resources" aria-label="TLA⁺ resources">
+      <div class="wrap resources-inner">
+        <span class="resources-label">TLA⁺ resources</span>
+        {{ range site.Menus.resources }}<a href="{{ .URL }}" target="_blank" rel="noopener">{{ .Name }}</a>{{ end }}
+      </div>
+    </nav>
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ "/" | relURL }}"><span class="brand-mark">TLA⁺</span> <span class="brand-word">Foundation</span></a>
+      <nav class="nav" aria-label="Main">
+        {{ range site.Menus.main }}
+          {{ $current := or ($.IsMenuCurrent "main" .) (and (eq .Identifier "foundation") (partial "in-foundation.html" $)) }}
+          <a href="{{ .URL }}"{{ if $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+        <a class="nav-cta" href="{{ site.Params.joinURL }}" target="_blank" rel="noopener">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>{{ block "main" . }}{{ end }}</main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand"><span class="brand-mark">TLA⁺</span> <span class="brand-word">Foundation</span></p>
+        <p class="muted">{{ site.Params.description }}</p>
+        <p class="muted">General inquiries: <a href="mailto:support@tlapl.us">support@tlapl.us</a>. Technical issues go to the <a href="https://github.com/tlaplus" target="_blank" rel="noopener">issue trackers on GitHub</a>.</p>
+      </div>
+      <div>
+        <h2 class="footer-h">TLA⁺</h2>
+        <ul>{{ range site.Menus.main }}<li><a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>{{ end }}</ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Foundation</h2>
+        <ul>{{ range site.Menus.foundation }}<li><a href="{{ .URL }}{{ with .Params.fragment }}#{{ . }}{{ end }}">{{ .Name }}</a></li>{{ end }}</ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Community</h2>
+        <ul>{{ range site.Menus.community }}<li><a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>{{ end }}</ul>
+      </div>
+    </div>
+    <div class="wrap legal">
+      Copyright © The Linux Foundation®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/legal/trademarks" target="_blank" rel="noopener">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds. <a href="https://www.linuxfoundation.org/legal/terms" target="_blank" rel="noopener">Terms of Use</a> · <a href="https://www.linuxfoundation.org/legal/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://www.linuxfoundation.org/legal/bylaws" target="_blank" rel="noopener">Bylaws</a> · <a href="https://www.linuxfoundation.org/legal/antitrust-policy" target="_blank" rel="noopener">Antitrust Policy</a> · <a href="https://www.linuxfoundation.org/legal/good-standing-policy" target="_blank" rel="noopener">Good Standing Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
